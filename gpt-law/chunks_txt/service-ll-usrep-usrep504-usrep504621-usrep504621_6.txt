@@ -1,0 +1,121 @@
+
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+late their economies in many ways not inconsistent with the
+antitrust laws. For example, Oregon may provide for peer
+review by its physicians without approving anticompetitive
+conduct by them. See Patrick, 486 U. S., at 105. Or Mich-
+igan may regulate its public utilities without authorizing
+monopolization in the market for electric light bulbs. See
+Cantorv . DetroitE dison Co., 428 U. S. 579,596 (1976). So we
+have held that state-action immunity is disfavored, much as
+are repeals by implication. Lafayette v. LouisianaP ower &
+Light Co., 435 U. S. 389, 398-399 (1978). By adhering in
+most cases to fundamental and accepted assumptions about
+the benefits of competition within the framework of the anti-
+trust laws, we increase the States' regulatory flexibility.
+States must accept political responsibility for actions they
+intend to undertake. It is quite a different matter, however,
+for federal law to compel a result that the States do not in-
+tend but for which they are held to account. Federalism
+serves to assign political responsibility, not to obscure it.
+Neither federalism nor political responsibility is well served
+by a rule that essential national policies are displaced by
+state regulations intended to achieve more limited ends.
+For States which do choose to displace the free market with
+regulation, our insistence on real compliance with both parts
+of the Midcal test will serve to make clear that the State is
+responsible for the price fixing it has sanctioned and under-
+taken to control.
+Respondents contend that these concerns are better ad-
+dressed by the requirement that the States articulate a clear
+policy to displace the antitrust laws with their own forms
+of economic regulation. This contention misapprehends the
+close relation between Midcal's two elements. Both are di-
+rected at ensuring that particular anticompetitive mecha-
+nisms operate because of a deliberate and intended state pol-
+icy. See Patrick,s upra,a t 100. In the usual case, Midcal's
+requirement that the State articulate a clear policy shows
+little more than that the State has not acted through inad-
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+vertence; it cannot alone ensure, as required by our prece-
+dents, that particular anticompetitive conduct has been ap-
+proved by the State. It seems plain, moreover, in light of
+the amici curiae brief to which we have referred, that sole
+reliance on the requirement of clear articulation will not
+allow the regulatory flexibility that these States deem neces-
+sary. For States whose object it is to benefit their citizens
+through regulation, a broad doctrine of state-action immu-
+nity may serve as nothing more than an attractive nuisance
+in the economic sphere. To oppose these pressures, sole re-
+liance on the requirement of clear articulation could become
+a rather meaningless formal constraint.
+III
+In the case before us, the Court of Appeals relied upon a
+formulation of the active supervision requirement articu-
+lated by the First Circuit:
+"'Where ... the state's program is in place, is staffed
+and funded, grants to the state officials ample power and
+the duty to regulate pursuant to declared standards of
+state policy, is enforceable in the state's courts, and dem-
+onstrates some basic level of activity directed towards
+seeing that the private actors carry out the state's policy
+and not simply their own policy, more need not be estab-
+lished."' 922 F. 2d, at 1136, quoting New England
+Motor Rate Bureau, Inc. v. FTC, 908 F. 2d, at 1071.
+Based on this standard, the Third Circuit ruled that the ac-
+tive supervision requirement was met in all four States, and
+held that the respondents' conduct was entitled to state-
+action immunity from antitrust liability. 922 F. 2d, at 1140.
+While in theory the standard articulated by the First Cir-
+cuit might be applied in a manner consistent with our prece-
+dents, it seems to us insufficient to establish the requisite
+level of active supervision. The criteria set forth by the
+First Circuit may have some relevance as the beginning
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+point of the active state supervision inquiry, but the analysis
+cannot end there. Where prices or rates are set as an initial
+matter by private parties, subject only to a veto if the State
+chooses to exercise it, the party claiming the immunity must
+show that state officials have undertaken the necessary steps
+to determine the specifics of the price-fixing or ratesetting
+scheme. The mere potential for state supervision is not
+an adequate substitute for a decision by the State. Under
+these standards, we must conclude that there was no active
+supervision in either Wisconsin or Montana.
+Respondents point out that in Wisconsin and Montana the
+rating bureaus filed rates with state agencies and that in
+both States the so-called negative option rule prevailed.
+The rates became effective unless they were rejected within
+a set time. It is said that as a matter of law in those States
+inaction signified substantive approval. This proposition
+cannot be reconciled, however, with the detailed findings, en-
+tered by the ALJ and adopted by the Commission, which
+demonstrate that the potential for state supervision was not
+realized in fact. The ALJ found, and the Commission
+agreed, that at most the rate filings were checked for mathe-
+matical accuracy. Some were unchecked altogether. In
+Montana, a rate filing became effective despite the failure of
+the rating bureau to provide additional requested informa-
+tion. In Wisconsin, additional information was provided
+after a lapse of seven years, during which time the rate filing
+remained in effect. These findings are fatal to respondents'
+attempts to portray the state regulatory regimes as provid-
+ing the necessary component of active supervision. The
+findings demonstrate that, whatever the potential for state
+regulatory review in Wisconsin and Montana, active state
+superYision did not occur. In the absence of active supervi-
+sion in fact, there can be no state-action immunity for what
+were otherwise private price-fixing arrangements. And as
+in Patrick, the availability of state judicial review could not
+fill the void. Because of the state agencies' limited role and
+

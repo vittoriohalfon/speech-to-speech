@@ -1,0 +1,124 @@
+
+
+FTC v. TICOR TITLE INS. CO.
+REHNQUIST, C. J., dissenting
+at 351.1 "The Parkerd ecision was premised on the assump-
+tion that Congress, in enacting the Sherman Act, did not
+intend to compromise the States' ability to regulate their
+domestic commerce." Southern Motor CarriersR ate Con-
+ference, Inc. v. United States, 471 U. S.4 8, 56 (1985) (foot-
+note omitted).
+We developed our present analysis for state-action immu-
+nity for private actors in CaliforniaR etail Liquor Dealers
+Assn. v. Midcal Aluminum, Inc., 445 U. S.9 7 (1980). We
+held in Midcal that our prior precedent had granted state-
+action immunity from antitrust liability to conduct by pri-
+vate actors where a program was "clearly articulated and
+affirmatively expressed as state policy [and] the policy [was]
+actively supervised by the State itself." Id., at 105 (internal
+quotation marks and citation omitted). In Midcal, we found
+the active supervision requirement was not met because
+under the California statute at issue, which required liquor
+retailers to charge a certain percentage above a price
+"posted" by area wholesalers, "[t]he State has no direct con-
+trol over wine prices, and it does not review the reasonable-
+ness of the prices set by wine dealers." Id., at 100. We
+noted that the state-action defense does not allow the States
+to authorize what is nothing more than private price fixing.
+Id., at 105.
+In each instance since Midcal in which we have concluded
+that the active supervision requirement for state-action im-
+munity was not met, the state regulators lacked authority,
+under state law, to review or reject the rates or action taken
+1 The Court states that "[c]ontinued enforcement of the national anti-
+trust policy grants the States more freedom, not less, in deciding whether
+to subject discrete parts of the economy to additional regulations and con-
+trols," ante, at 632. However, in Parker, we held that the Sherman Act
+simply does not apply to conduct regulated by the State. The enforce-
+ment of the national antitrust policy, as embodied in the antitrust laws,
+may grant individuals more freedom to compete in our free market sys-
+tem, but it does not implicate the freedom of the States in deciding
+whether to regulate.
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+REHNQUIST, C. J., dissenting
+by the private actors facing antitrust liability.2 Our most
+recent formulation of the "active supervision" requirement
+was announced in Patrick v. Burget, 486 U. S. 94 (1988),
+where we concluded that to satisfy the "active supervision"
+requirement, "state officials [must] have and exercise power
+to review particular anticompetitive acts of private parties
+and disapprove those that fail to accord with state policy."
+Id., at 101. Until today, therefore, we have never had occa-
+sion to determine whether a state regulatory program which
+gave state officials authority-"power"-to review and regu-
+late prices or conduct, might still fail to meet the require-
+ment for active state supervision because the State's regula-
+tion was not sufficiently detailed or rigorous.
+Addressing this question, the Court of Appeals in this case
+used the following analysis:
+"'Where, as here, the state's program is in place, is
+staffed and funded, grants to the state officials ample
+power and the duty to regulate pursuant to declared
+standards of state policy, is enforceable in the state's
+courts, and demonstrates some basic level of activity di-
+rected towards seeing that the private actors carry out
+the state's policy and not simply their own policy, more
+need not be established."' 922 F. 2d 1122, 1136 (CA3
+1991), quoting New England Motor Rate Bureau, Inc.
+v. FTC, 908 F. 2d 1064, 1071 (CA1 1990).
+The Court likens this test to doing away all together with
+the active supervision requirement for immunity based on
+state action. But the test used by the Court of Appeals is
+2I n 324 Liquor Corp. v. Duffy, 479 U. S. 335 (1987), we held that a New
+York statute failed to shelter private actors from antitrust liability be-
+cause the state legislation required retailers to charge 112% of the price
+"posted" by wholesalers. The New York statute, like the California stat-
+ute at issue in CaliforniaR etail Liquor Dealers Assn. v. Midcal Alumi-
+num, Inc., 445 U. S. 97 (1980), gave no power to the state agency to review
+or establish the reasonableness of the price schedules "posted" by the
+wholesalers. 324 Liquor, supra,a t 345.
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+REHNQUIST, C. J., dissenting
+much more closely attuned to our "have and exercise power"
+formulation in Patrick v. Burget than is the rule adopted by
+the Court today. The Court simply does not say just how
+active a State's regulators must be before the "active super-
+vision" requirement will be satisfied. The only guidance it
+gives is that the inquiry should be one akin to causation in
+a negligence case; does the State play "a substantial role
+in determining the specifics of the economic policy." Ante,
+at 635. Any other formulation, we are told, will remove
+the active supervision requirement altogether as a practical
+matter.
+I do not believe this to be the case.3 In the States at issue
+here, the particular conduct was approved by a state agency.
+The agency manifested this approval by raising no objection
+to a required rate filing by the entity subject to regulation.
+This is quite consistent with our statement that the active
+supervision requirement serves mainly an "evidentiary func-
+tion" as "one way of ensuring that the actor is engaging in
+the challenged conduct pursuant to state policy." Hallie v.
+Eau Claire, 471 U. S. 34, 46 (1985).
+The Court insists that its newly required "active supervi-
+sion" will "increase the States' regulatory flexibility." Ante,
+at 636. But if private actors who participate, through a
+joint rate filing, in a State's "negative option" regulatory
+scheme may be liable for treble damages if they cannot prove
+that the State approved the specifics of a filing, the Court
+makes it highly unlikely that private actors will choose to
+participate in such a joint filing. This in turn lessens the
+States' regulatory flexibility, because as we have noted be-
+fore, joint rate filings can improve the regulatory process
+by ensuring that the state agency has fewer filings to con-
+sider, allowing more resources to be expended on each filing.
+3T he state regulatory programs in Midcal, supra, Patrick v. Burget,
+486 U. S. 94 (1988), and 824 Liquor, supra, would all fail to provide immu-
+nity for lack of active supervision under the test adopted by the Court
+of Appeals.
+

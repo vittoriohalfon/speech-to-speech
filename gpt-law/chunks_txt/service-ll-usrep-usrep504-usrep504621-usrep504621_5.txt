@@ -1,0 +1,121 @@
+
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+tory programs. Our decision was grounded in principles of
+federalism. Id., at 350-352.
+The principle of freedom of action for the States, adopted
+to foster and preserve the federal system, explains the later
+evolution and application of the Parkerd octrine in our deci-
+sions in Midcal, supra, and Patrick v. Burget, 486 U. S. 94
+(1988). In Midcal we invalidated a California statute for-
+bidding licensees in the wine trade to sell below prices set
+by the producer. There we announced the two-part test ap-
+plicable to instances where private parties participate in a
+price-fixing regime. "First, the challenged restraint must
+be one clearly articulated and affirmatively expressed as
+state policy; second, the policy must be actively supervised
+by the State itself." 445 U. S., at 105 (internal quotation
+marks omitted). Midcal confirms that while a State may
+not confer antitrust immunity on private persons by fiat, it
+may displace competition with active state supervision if the
+displacement is both intended by the State and implemented
+in its specific details. Actual state involvement, not defer-
+ence to private price-fixing arrangements under the general
+auspices of state law, is the precondition for immunity from
+federal law. Immunity is conferred out of respect for on-
+going regulation by the State, not out of respect for the
+economics of price restraint. In Midcal we found that the
+intent to restrain prices was expressed with sufficient preci-
+sion so that the first part of the test was met, but that the
+absence of state participation in the mechanics of the price
+posting was so apparent that the requirement of active su-
+pervision had not been met. Ibid.
+The rationale was further elaborated in Patrick v. Burget.
+In Patrick it had been alleged that private physicians partic-
+ipated in the State's peer review system in order to injure
+or destroy competition by denying hospital privileges to a
+physician who had begun a competing clinic. We referred
+to the purpose of preserving the State's own administrative
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS.. CO.
+Opinion of the Court
+policies, as distinct from allowing private parties to foreclose
+competition, in the following passage:
+"The active supervision requirement stems from the rec-
+ognition that where a private party is engaging in the
+anticompetitive activity, there is a real danger that he
+is acting to further his own interests, rather than the
+governmental interests of the State. . . . The require-
+ment is designed to ensure that the state-action doctrine
+will shelter only the particular anticompetitive acts of
+private parties that, in the judgment of the State, actu-
+ally further state regulatory policies. To accomplish
+this purpose, the active supervision requirement man-
+dates that the State exercise ultimate control over the
+challenged anticompetitive conduct .... The mere pres-
+ence of some state involvement or monitoring does not
+suffice.... The active supervision prong of the Midcal
+test requires that state officials have and exercise power
+to review particular anticompetitive acts of private par-
+ties and disapprove those that fail to accord with state
+policy. Absent such a program of supervision, there is
+no realistic assurance that a private party's anticompeti-
+tive conduct promotes state policy, rather than merely
+the party's individual interests." 486 U. S., at 100-101
+(internal quotation marks and citations omitted).
+Because the particular anticompetitive conduct at issue in
+Patrick had not been supervised by governmental actors, we
+decided that the actions of the peer review committee were
+not entitled to state-action immunity. Id., at 106.
+Our decisions make clear that the purpose of the active
+supervision inquiry is not to determine whether the State
+has met some normative standard, such as efficiency, in its
+regulatory practices. Its purpose is to determine whether
+the State has exercised sufficient independent judgment and
+control so that the details of the rates or prices have been
+established as a product of deliberate state intervention, not
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+simply by agreement among private parties. Much as in
+causation inquiries, the analysis asks whether the State has
+played a substantial role in determining the specifics of the
+economic policy. The question is not how well state regula-
+tion works but whether the anticompetitive scheme is the
+State's own.
+Although the point bears but brief mention, we observe
+that our prior cases considered state-action immunity
+against actions brought under the Sherman Act, and this
+case arises under the Federal Trade Commission Act. The
+Commission has argued at other times that state-action im-
+munity does not apply to Commission action under § 5 of the
+Federal Trade Commission Act, 15 U. S. C. § 45. See U. S.
+Bureau of Consumer Protection, Staff Report to the Federal
+Trade Commission on Prescription Drug Price Disclosures,
+Chs. VI(B) and (C) (1975); see also Note, The State Action
+Exemption and Antitrust Enforcement under the Federal
+Trade Commission Act, 89 Harv. L. Rev. 715 (1976). A lead-
+ing treatise has expressed its skepticism of this view. See
+1 P. Areeda & D. Turner, Antitrust Law 218 (1978). We
+need not determine whether the antitrust statutes can be
+distinguished on this basis, because the Commission does not
+assert any superior pre-emption authority in the instant
+matter. We apply our prior cases to the one before us.
+Respondents contend that principles of federalism justify
+a broad interpretation of state-action immunity, but there is
+a powerful refutation of their viewpoint in the briefs that
+were filed in this case. The State of Wisconsin, joined by
+Montana and 34 other States, has filed a brief as amici cu-
+riae on the precise point. These States deny that respond-
+ents' broad immunity rule would serve the States' best inter-
+ests. We are in agreement with the amici submission.
+If the States must act in the shadow of state-action immu-
+nity whenever they enter the realm of economic regulation,
+then our doctrine will impede their freedom of action, not
+advance it. The fact of the matter is that the States regu-
+

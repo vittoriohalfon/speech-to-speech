@@ -1,0 +1,11 @@
+Convert the following SCOTUS opinion document into a JSON-LD prompt/response format (which I will give to fine-tune my GPT model) . Each prompt/response pair should be relevant to a case citation, precedent, or prior opinion. Make sure prompt/response pair have properties such as date, case number, involved parties, reasoning for including in this opinion, and other relevant information.
+
+
+
+
+<<CHUNK>>
+
+
+
+
+Prompt/response

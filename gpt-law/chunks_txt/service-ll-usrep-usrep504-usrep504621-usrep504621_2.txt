@@ -1,0 +1,127 @@
+
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+JUSTICE KENNEDY delivered the opinion of the Court.
+The Federal Trade Commission filed an administrative
+complaint against six of the Nation's largest title insurance
+M. Ringo, Assistant Attorney General, William J. Guste, Jr., Attorney
+General of Louisiana, and Jesse James Marks and Anne F Benoit, Assist-
+ant Attorneys General, Michael E. Carpenter,A ttorney General of Maine,
+and Stephen L. Wessler, Deputy Attorney General, Scott Harshbarger,
+Attorney General of Massachusetts, and George K. Weber and Thomas M.
+Alpert, Assistant Attorneys General, Frank J Kelley, Attorney General
+of Michigan, Hubert H. Humphrey III, Attorney General of Minnesota,
+Mike Moore, Attorney General of Mississippi, Marc Racicot, Attorney
+General of Montana, FrankieS ue Del Papa,A ttorney General of Nevada,
+John P. Arnold, Attorney General of New Hampshire, Charles T Putnam,
+Senior Assistant Attorney General, and Walter L. Maroney, Assistant
+Attorney General, Robert J Del Tufo, Attorney General of New Jersey,
+and Laurel A Price, Deputy Attorney General, Robert Abrams, Attorney
+General of New York, Jerry Boone, Solicitor General, and George W
+Sampson and Richard Schwartz, Assistant Attorneys General, Lacy H.
+Thornburg,A ttorney General of North Carolina, James C. Gulick, Special
+Deputy Attorney General, and K. D, Sturgis, Assistant Attorney General,
+Nicholas J Spaeth, Attorney General of North Dakota, and David W
+Huey, Assistant Attorney General, Lee Fisher,A ttorney General of Ohio,
+and Marc B. Bandman, Assistant Attorney General, Susan B. Loving,
+Attorney General of Oklahoma, and Jane F Wheeler, Assistant Attorney
+General, Ernest D. Preate,J r., Attorney General of Pennsylvania, Thomas
+L. Welch, Chief Deputy Attorney General, and Carl S. Hisiro, Assistant
+Chief Deputy Attorney General, James E. O'Neil, Attorney General of
+Rhode Island, and Edmund F Murray, Jr., Special Assistant Attorney
+General, Charles W Burson, Attorney General of Tennessee, John Knox
+Walkup, Solicitor General, and Perry A Craft, Deputy Attorney General,
+Dan Morales, Attorney General of Texas, Will Pryor, First Assistant
+Attorney General, Mary F Keller, Deputy Attorney General, and Mark
+Tobey, Assistant Attorney General, R. Paul Van Dam, Attorney General
+of Utah, Jeffrey L. Amestoy, Attorney General of Vermont, and Geoffrey
+A Yudien, Assistant Attorney General, Mary Sue Terry, Attorney Gen-
+eral of Virginia, Kenneth 0. Eikenberry,A ttorney General of Washington,
+and Carol A Smith, Assistant Attorney General, Mario J Palumbo, At-
+torney General of West Virginia, and Donald L. Darling,D eputy Attorney
+General, and Joseph B. Meyer, Attorney General of Wyoming.
+Briefs of amici curiae urging affirmance were filed for the State of
+California et al. by Daniel E. Lungren, Attorney General of California,
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+companies, alleging horizontal price fixing in their fees for
+title searches and title examinations. One company settled
+by consent decree, while five other firms continue to contest
+the matter. The Commission charged the title companies
+with violating § 5(a)(1) of the Federal Trade Commission Act,
+38 Stat. 719, 15 U. S. C. §45(a)(1), which prohibits "[u]nfair
+methods of competition in or affecting commerce." One of
+the principal defenses the companies assert is state-action
+immunity from antitrust prosecution, as contemplated in the
+line of cases beginning with Parkerv . Brown, 317 U. S. 341
+(1943). The Commission rejected this defense, In re Ticor
+Title Ins. Co., 112 F. T. C. 344 (1989), and the firms sought
+review in the United States Court of Appeals for the Third
+Circuit. Ruling that state-action immunity was available
+under the state regulatory schemes in question, the Court
+of Appeals reversed. 922 F. 2d 1122 (1991). We granted
+certiorari. 502 U. S. 806 (1991).
+I
+Title insurance is the business of insuring the record title
+of real property for persons with some interest in the estate,
+including owners, occupiers, and lenders. A title insurance
+policy insures against certain losses or damages sustained by
+reason of a defect in title not shown on the policy or title
+report to which it refers. Before issuing a title insurance
+Roderick E. Walston, Chief Assistant Attorney General, and Thomas F.
+Gede, Special Assistant Attorney General, Gale A Norton, Attorney Gen-
+eral of Colorado, Don Stenberg, Attorney General of Nebraska, and Mark
+W. Barnett, Attorney General of South Dakota; for the American Insur-
+ance Association et al. by John E. Nolan, Craig A Berrington, James H.
+Bradner, Jr., Theresa L. Sorota, and Patrick J McNally; for Hartford
+Fire Insurance Co. et al. by Stephen M. Shapiro, Mark I. Levy, Andrew J
+Pincus,a nd Roy T Englert, Jr.; and for the National Council on Compen-
+sation Insurance by Jerome A Hochberg and Mark E. Solomons.
+Briefs of amici curiae were filed for the American Land Title Associa-
+tion by Philip H. Rudolph and James R. Maher; and for the Pennsylvania
+Electric Association by Jeffrey H. Howard.
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+policy, the insurance company or one of its agents performs
+a title search and examination. The search produces a
+chronological list of the public documents in the chain of title
+to the real property. The examination is a critical analysis
+or interpretation of the condition of title revealed by the doc-
+uments disclosed through this search.
+The title search and examination are major components of
+the insurance company's services. There are certain vari-
+ances from State to State and from policy to policy, but a
+brief summary of the functions performed by the title compa-
+nies can be given. The insurance companies exclude from
+coverage defects uncovered during the search; that is, the
+insurers conduct searches in order to inform the insured and
+to reduce their own liability by identifying and excluding
+known risks. The insured is protected from some losses re-
+sulting from title defects not discoverable from a search of
+the public records, such as forgery, missing heirs, previous
+marriages, impersonation, or confusion in names. They are
+protected also against errors or mistakes in the search and
+examination. Negligence need not be proved in order to re-
+cover. Title insurance also includes the obligation to defend
+in the event that an insured is sued by reason of some defect
+within the scope of the policy's guarantee.
+The title insurance industry earned $1.35 billion in gross
+revenues in 1982, and respondents accounted for 57 percent
+of that amount. Four of respondents are the nation's largest
+title insurance companies: Ticor Title Insurance Co., with
+16.5 percent of the market; Chicago Title Insurance Co., with
+12.8 percent; Lawyers Title Insurance Co., with 12 percent;
+and SAFECO Title Insurance Co. (now operating under the
+name Security Union Title Insurance Co.), with 10.3 percent.
+Stewart Title Guarantee Co., with 5.4 percent of the market,
+is the country's eighth largest title insurer, with a strong
+position in the West and Southwest. App. to Pet. for Cert.
+145a.
+

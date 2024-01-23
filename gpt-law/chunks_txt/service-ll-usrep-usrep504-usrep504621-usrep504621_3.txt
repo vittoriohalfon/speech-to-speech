@@ -1,0 +1,121 @@
+
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+The Commission issued an administrative complaint in
+1985. Horizontal price fixing was alleged in these terms:
+"'Respondents have agreed on the prices to be charged
+for title search and examination services or settlement
+services through rating bureaus in various states. Ex-
+amples of states in which one or more of the respond-
+ents have fixed prices with other respondents or other
+competitors for all or part of their search and examina-
+tion services or settlement services are Arizona, Con-
+necticut, Idaho, Louisiana, Montana, New Jersey, New
+Mexico, New York, Ohio, Oregon, Pennsylvania, Wiscon-
+sin and Wyoming."' 112 F. T. C., at 346.
+The Commission did not challenge the insurers' practice of
+setting uniform rates for insurance against the risk of loss
+from defective titles, but only the practice of setting uniform
+rates for the title search, examination, and settlement, as-
+pects of the business which, the Commission alleges, do not
+involve insurance.
+Before the Administrative Law Judge (ALJ), respondents
+defended against liability on three related grounds. First,
+they maintained that the challenged conduct is exempt
+from antitrust scrutiny under the McCarran-Ferguson Act,
+59 Stat. 34, 15 U. S. C. § 1012(b), which confers antitrust
+immunity over the "business of insurance" to the extent reg-
+ulated by state law. Second, they argued that their collec-
+tive ratemaking activities are exempt under the Noerr-
+Pennington doctrine, which places certain "[j]oint efforts to
+influence public officials" beyond the reach of the antitrust
+laws. Mine Workers v. Pennington, 381 U. S. 657, 670
+(1965); Eastern Railroad Presidents Conference v. Noerr
+Motor Freight, Inc., 365 U. S. 127, 136 (1961). Third, re-
+spondents contended their activities are entitled to state-
+action immunity, which permits anticompetitive conduct if
+authorized and supervised by state officials. See California
+Retail Liquor Dealers Assn. v. Midcal Aluminum, Inc., 445
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+U. S. 97 (1980); Parkerv . Brown, 317 U. S. 341 (1943). App.
+to Pet. for Cert. 218a. As to one State, Ohio, respondents
+contended that the rates for title search, examination, and
+settlement had not been set by a rating bureau.
+Title insurance company rates and practices in 13 States
+were the subject of the initial complaint. Before the matter
+was decided by the ALJ, the Commission declined to pursue
+its complaint with regard to fees in five of these States:
+Louisiana, New Mexico, New York, Oregon, and Wyoming.
+Upon the recommendation of the ALJ, the Commission did
+not pursue its complaint with regard to fees in two additional
+States, Idaho and Ohio. This left six States in which the
+Commission found antitrust violations, but in two of these
+States, New Jersey and Pennsylvania, the Commission con-
+ceded the issue on which certiorari was sought here, so the
+regulatory regimes in these two States are not before us.
+Four States remain in which violations were alleged: Con-
+necticut, Wisconsin, Arizona, and Montana.
+The ALJ held that the rates for search and examination
+services had been fixed in these four States. For reasons we
+need not pause to examine, the ALJ rejected the McCarran-
+Ferguson and Noerr-Pennington defenses. The ALJ then
+turned his attention to the question of state-action immunity.
+A summary of the ALJ's extensive findings on this point is
+necessary for a full understanding of the decisions reached
+at each level of the proceedings in the case.
+Rating bureaus are private entities organized by title in-
+surance companies to establish uniform rates for their mem-
+bers. The ALJ found no evidence that the collective setting
+of title insurance rates through rating bureaus is a way of
+pooling risk information. Indeed, he found no evidence that
+any title insurer sets rates according to actuarial loss experi-
+ence. Instead, the ALJ found that the usual practice is for
+rating bureaus to set rates according to profitability studies
+that focus on the costs of conducting searches and examina-
+tions. Uniform rates are set notwithstanding differences in
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+efficiencies and costs among individual members. App. to
+Pet. for Cert. 183a-184a.
+The ALJ described the regulatory regimes for title insur-
+ance rates in the four States still at issue. In each one, the
+title insurance rating bureau was licensed by the State and
+authorized to establish joint rates for its members. Each of
+the four States used what has come to be called a "negative
+option" system to approve rate filings by the bureaus.
+Under a negative option system, the rating bureau filed rates
+for title searches and title examinations with the state insur-
+ance office. The rates became effective unless the State
+rejected them within a specified period, such as 30 days. Al-
+though the negative option system provided a theoretical
+mechanism for substantive review, the ALJ determined,
+after making detailed findings regarding the operation of
+each regulatory regime, that the rate filings were subject to
+minimal scrutiny by state regulators.
+In Connecticut the State Insurance Department has the
+authority to audit the rating bureau and hold hearings re-
+garding rates, but it has not done so. The Connecticut rat-
+ing bureau filed only two major rate increases, in 1966 and
+in 1981. The circumstances behind the 1966 rate increase
+are somewhat obscure. The ALJ found that the Insurance
+Department asked the rating bureau to submit additional in-
+formation justifying the increase, and later approved the
+rate increase although there is no evidence the additional
+information was provided. In 1981 the Connecticut rating
+bureau filed for a 20 percent rate increase. The factual
+background for this rate increase is better developed though
+the testimony was somewhat inconsistent. A state insur-
+ance official testified that he reviewed the rate increase with
+care and discussed various components of the increase with
+the rating bureau. The same official testified, however, that
+he lacked the authority to question certain expense data he
+considered quite high. Id., at 189a-195a.
+

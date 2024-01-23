@@ -1,0 +1,119 @@
+
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+participation, state judicial review was likewise limited.
+See Patrick, 486 U. S., at 103-105.
+Our decision in Southern Motor Carriers Rate Confer-
+ence, Inc. v. United States, 471 U. S. 48 (1985), though it too
+involved a negative option regime, is not to the contrary.
+The question there was whether the first part of the Midcal
+test was met, the Government's contention being that a pric-
+ing policy is not an articulated one unless the practice is com-
+pelled. We rejected that assertion and undertook no real
+examination of the active supervision aspect of the case, for
+the Government conceded that the second part of the test
+had been met. Id., at 62, 66. The concession was against
+the background of a District Court determination that, al-
+though submitted rates could go into effect without further
+state activity, the State had ordered and held ratemaking
+hearings on a consistent basis, using the industry submis-
+sions as the beginning point. See United States v. Southern
+Motor CarriersR ate Conference, Inc., 467 F. Supp. 471, 476-
+477 (ND Ga. 1979). In the case before us, of course, the
+Commission concedes the first part of the Midcal require-
+ment and litigates the second; and there is no finding of sub-
+stantial state participation in the ratesetting scheme.
+This case involves horizontal price fixing under a vague
+imprimatur in form and agency inaction in fact. No anti-
+trust offense is more pernicious than price fixing. FTC v.
+Superior Court Trial Lawyers Assn., 493 U. S. 411, 434, n. 16
+(1990). In this context, we decline to formulate a rule that
+would lead to a finding of active state supervision where in
+fact there was none. Our decision should be read in light of
+the gravity of the antitrust offense, the involvement of pri-
+vate actors throughout, and the clear absence of state super-
+vision. We do not imply that some particular form of state
+or local regulation is required to achieve ends other than
+the establishment of uniform prices. Cf. Columbia v. Omni
+Outdoor Advertising, Inc., 499 U. S. 365 (1991) (city billboard
+zoning ordinance entitled to state-action immunity). We do
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+SCALIA, J., concurring
+not have before us a case in which governmental actors made
+unilateral decisions without participation by private actors.
+Cf. Fisher v. Berkeley, 475 U. S. 260 (1986) (private actors
+not liable without private action). And we do not here call
+into question a regulatory regime in which sampling tech-
+niques or a specified rate of return allow state regulators
+to provide comprehensive supervision without complete con-
+trol, or in which there was an infrequent lapse of state super-
+vision. Cf. 324 Liquor Corp. v. Duffy, 479 U. S. 335, 344,
+n. 6 (1987) (a statute specifying the margin between whole-
+sale and retail prices may satisfy the active supervision re-
+quirement). In the circumstances of this case, however, we
+conclude that the acts of respondents in the States of Mon-
+tana and Wisconsin are not immune from antitrust liability.
+IV
+In granting certiorari we undertook to review the further
+contention by the Commission that the Court of Appeals was
+incorrect in disregarding the Commission's findings as to the
+extent of state supervision. The parties have focused their
+briefing on this question on the regulatory schemes of
+Connecticut and Arizona. We think the Court of Appeals
+should have the opportunity to reexamine its determinations
+with respect to these latter two States in light of the views
+we have expressed.
+The judgment of the Court of Appeals is reversed, and
+the case is remanded for further proceedings consistent with
+this opinion.
+It is so ordered.
+JUSTICE SCALIA, concurring.
+The Court's standard is in my view faithful to what our
+cases have said about "active supervision." On the other
+hand, I think THE CHIEF JUSTICE and JUSTICE O'CONNOR
+are correct that this standard will be a fertile source of un-
+certainty and (hence) litigation, and will produce total aban-
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+REHNQUIST, C. J., dissenting
+donment of some state programs because private individuals
+will not take the chance of participating in them. That is
+true, moreover, not just in the "negative option" context, but
+even in a context such as that involved in Patrick v. Burget,
+486 U. S. 94 (1988): Private physicians invited to participate
+in a state-supervised hospital peer review system may not
+know until after their participation has occurred (and indeed
+until after their trial has been completed) whether the
+State's supervision will be "active" enough.
+I am willing to accept these consequences because I see no
+alternative within the constraints of our "active supervision"
+doctrine, which has not been challenged here; and because I
+am skeptical about the Parkerv . Brown, 317 U. S. 341 (1943),
+exemption for state-programmed private collusion in the
+first place.
+CHIEF JUSTICE REHNQUIST, with whom JUSTICE O'CON-
+NOR and JUSTICE THOMAS join, dissenting.
+The Court holds today that to satisfy the "active supervi-
+sion" requirement of state-action immunity from antitrust
+liability, private parties acting pursuant to a regulatory
+scheme enacted by a state legislature must prove that "the
+State has played a substantial role in determining the spe-
+cifics of the economic policy." Ante, at 635. Because this
+standard is neither supported by our prior precedent nor
+sound as a matter of policy, I dissent.
+Immunity from antitrust liability under the state-action
+doctrine was first established in Parker v. Brown, 317 U. S.
+341 (1943). As noted by the majority, in Parkerw e relied
+on principles of federalism in concluding that the Sherman
+Act did not apply to state officials administering a regulatory
+program enacted by the state legislature. We concluded
+that state action is exempt from antitrust liability, because
+in the Sherman Act Congress evidences no intent to "re-
+strain state action or official action directed by a state." Id.,
+

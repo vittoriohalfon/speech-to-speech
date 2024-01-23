@@ -1,0 +1,134 @@
+OCTOBER TERM, 1991
+Syllabus
+FEDERAL TRADE COMMISSION v. TICOR TITLE
+INSURANCE CO. ET AL.
+CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR
+THE THIRD CIRCUIT
+No. 91-72. Argued January 13, 1992-Decided June 12, 1992
+Petitioner Federal Trade Commission filed an administrative complaint
+charging respondent title insurance companies with horizontal price
+fixing in setting fees for title searches and examinations in violation of
+§ 5(a)(1) of the Federal Trade Commission Act. In each of the four
+States at issue-Connecticut, Wisconsin, Arizona, and Montana-uni-
+form rates were established by a rating bureau licensed by the State
+and authorized to establish joint rates for its members. Rate filings
+were made to the state insurance office and became effective unless the
+State rejected them within a specified period. The Administrative Law
+Judge held, inter alia, that the rates had been fixed in all four States,
+but that, in Wisconsin and Montana, respondents' anticompetitive activi-
+ties were entitled to state-action immunity, as contemplated in Parker
+v. Brown, 317 U. S. 341, and its progeny. Under this doctrine, a state
+law or regulatory scheme can be the basis for antitrust immunity if
+the State (1) has articulated a clear and affirmative policy to allow the
+anticompetitive conduct and (2) provides active supervision of anti-
+competitive conduct undertaken by private actors. California Retail
+Liquor Dealers Assn. v. Midcal Aluminum, Inc., 445 U. S. 97, 105. The
+Commission, which conceded that the first part of the test was met, held
+on review that none of the States had conducted sufficient supervi-
+sion to warrant immunity. The Court of Appeals reversed, holding that
+the existence of a state regulatory program, if staffed, funded, and em-
+powered by law, satisfied the active supervision requirement. Thus, it
+concluded, respondents' conduct in all the States was entitled to state-
+action immunity.
+Held:
+1. State-action immunity is not available under the regulatory
+schemes in Montana and Wisconsin. Pp. 632-640.
+(a) Principles of federalism require that federal antitrust laws be
+subject to supersession by state regulatory programs. Parker,s upra,
+at 350-352; Midcal, supra; Patrick v. Burget, 486 U. S. 94. Midcal's
+two-part test confirms that States may not confer antitrust immunity
+on private persons by fiat. Actual state involvement is the precondition
+for immunity, which is conferred out of respect for the State's ongoing
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+Syllabus
+regulation, not the economics of price restraint. The purpose of the
+active supervision inquiry is to determine whether the State has exer-
+cised sufficient independent judgment and control so that the details of
+the rates or prices have been established as a product of deliberate
+state intervention. Although this immunity doctrine was developed in
+actions brought under the Sherman Act, the issue whether it applies to
+Commission action under the Federal Trade Commission Act need not
+be determined, since the Commission does not assert any superior pre-
+emption authority here. Pp. 632-635.
+(b) Wisconsin, Montana, and 34 other States correctly contend
+that a broad interpretation of state-action immunity would not serve
+their best interests. The doctrine would impede, rather than advance,
+the States' freedom of action if it required them to act in the shadow of
+such immunity whenever they entered the realm of economic regulation.
+Insistence on real compliance with both parts of the Midcal test serves
+to make clear that the States are responsible for only the price fixing
+they have sanctioned and undertaken to control. Respondents' conten-
+tion that such concerns are better addressed by the first part of the
+Midcal test misapprehends the close relation between Midcal's two
+elements, which are both directed at ensuring that particular anticom-
+petitive mechanisms operate because of a deliberate and intended state
+policy. A clear policy statement ensures only that the State did not act
+through inadvertence, not that the State approved the anticompetitive
+conduct. Sole reliance on the clear articulation requirement would not
+allow the States sufficient regulatory flexibility. Pp. 635-637.
+(c) Where prices or rates are initially set by private parties, subject
+to veto only if the State chooses, the party claiming the immunity must
+show that state officials have undertaken the necessary steps to deter-
+mine the specifics of the price-fixing or ratesetting scheme. The mere
+potential for state supervision is not an adequate substitute for the
+State's decision. Thus, the standard relied on by the Court of Appeals
+in this case is insufficient to establish the requisite level of active super-
+vision. The Commission's findings of fact demonstrate that the poten-
+tial for state supervision was not realized in either Wisconsin or Mon-
+tana. While most rate filings were checked for mathematical accuracy,
+some were unchecked altogether. Moreover, one rate filing became
+effective in Montana despite the rating bureau's failure to provide re-
+quested information, and additional information was provided in Wis-
+consin after seven years, during which time another rate filing remained
+in effect. Absent active supervision, there can be no state-action im-
+munity for what were otherwise private price-fixing arrangements.
+And state judicial review cannot fill the void. See Patrick, supra, at
+103-105. This Court's decision in Southern Motor CarriersR ate Con-
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Syllabus
+ference, Inc. v. United States, 471 U. S. 48, which involved a similar
+negative option regime, is not to the contrary, since it involved the ques-
+tion whether the first part of the Midcal test was met. This case in-
+volves horizontal price fixing under a vague imprimatur in form and
+agency inaction in fact, and it should be read in light of the gravity of
+the antitrust offense, the involvement of private actors throughout, and
+the clear absence of state supervision. Pp. 637-640.
+2. The Court of Appeals should have the opportunity to reexamine
+its determinations with respect to Connecticut and Arizona in order to
+address whether it accorded proper deference to the Commission's fac-
+tual findings as to the extent of state supervision in those States. P. 640.
+922 F. 2d 1122, reversed and remanded.
+KENNEDY, J., delivered the opinion of the Court, in which WHITE,
+BLACKMUN, STEVENS, SCALIA, and SOUTER, JJ., joined. SCALIA, J., filed
+a concurring opinion, post, p. 640. REHNQUIST, C. J., filed a dissenting
+opinion, in which O'CONNOR and THOMAS, JJ., joined, post, p. 641. O'CoN-
+NOR, J., filed a dissenting opinion, in which THOMAS, J., joined, post, p. 646.
+Deputy Solicitor General Wallace argued the cause for
+petitioner. With him on the briefs were Solicitor General
+Starr,A ssistant Attorney General Rill, Robert A. Long, Jr.,
+James M. Spears, Jay C. Shaffer, Ernest J. Isenstadt, Mi-
+chael E. Antalics, and Ann Malester.
+John C. Christie, Jr., argued the cause for respondents.
+With him on the brief were Patrick J. Roach, John F.
+Graybeal, and David M. Foster.*
+*A brief of amici curiae urging reversal was filed for the State of Wis-
+consin et al. by James E. Doyle, Attorney General of Wisconsin, and Kevin
+J O'Connor,A ssistant Attorney General, J Joseph Curran,J r., Attorney
+General of Maryland, and Robert N McDonald and Ellen S. Cooper,
+Assistant Attorneys General, James H. Evans, Attorney General of Ala-
+bama, Charles E. Cole, Attorney General of Alaska, and James Forbes,
+Assistant Attorney General, Grant Woods, Attorney General of Arizona,
+and Jeri K. Auther, Assistant Attorney General, Winston Bryant, Attor-
+ney General of Arkansas, and Royce Griffin, Deputy Attorney General,
+Charles M. Oberly III, Attorney General of Delaware, Robert A Butter-
+worth, Attorney General of Florida, Larry EchoHawk, Attorney General
+of Idaho, and Brett T DeLange, Deputy Attorney General, Bonnie J
+Campbell, Attorney General of Iowa, and John R. Perkins, Deputy Attor-
+ney General, FredericJ Cowan, Attorney General of Kentucky, and James
+

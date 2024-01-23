@@ -1,0 +1,124 @@
+
+
+Cite as: 504 U. S. 621 (1992)
+REHNQUIST, C. J., dissenting
+Southern Motor Carriers Rate Conference, Inc. v. United
+States, supra, at 51. The view advanced by the Court of
+Appeals does not sanction price fixing in areas regulated by
+a State "not inconsistent with the antitrust laws." Ante, at
+636. A State must establish, staff, and fund a program to
+approve jointly set rates or prices in order for any activity
+undertaken by private individuals under that program to be
+laws.4
+immune under the antitrust
+The Court rejects the test adopted by the Court of Ap-
+peals, stating that it cannot be the end of the inquiry. In-
+stead, the party seeking immunity must "show that state
+officials have undertaken the necessary steps to determine
+the specifics of the price-fixing or ratesetting scheme."
+Ante, at 638.5 Such an inquiry necessarily puts the federal
+court in the position of determining the efficacy of a particu-
+lar State's regulatory scheme, in order to determine whether
+the State has met the "requisite level of active supervision."
+Ante, at 637. The Court maintains that the proper state-
+action inquiry does not determine whether a State has met
+some "normative standard" in its regulatory practices.
+Ante, at 634. But the Court's focus on the actions taken by
+state regulators, i. e., the way the State regulates, necessar-
+ily requires a judgment as to whether the State is sufficiently
+active-surely a normative judgment.
+4 In neither of the examples cited by the majority as instances of state
+regulation not intended to authorize anticompetitive conduct would appli-
+cation of a less detailed active supervision test change the result. In Pat-
+rick v. Burget, supra, we concluded there was no immunity because the
+State did not have the authority to review the anticompetitive action un-
+dertaken by the peer review committee; in Cantor v. Detroit Edison Ca,
+428 U. S. 579 (1976), it is unlikely that the clear articulation requirement
+under our current jurisprudence would be met with respect to the market
+for light bulbs.
+6 It is not clear, from the Court's formulation, whether this is a separate
+test applicable only to negative option regulatory schemes, or whether
+it applies more generally to issues of immunity under the state-action
+doctrine.
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+O'CONNOR, J., dissenting
+The Court of Appeals found-properly, in my view-that
+while the States at issue here did not regulate respondents'
+rates with the vigor petitioner would have liked, the States'
+supervision of respondents' conduct was active enough so as
+to provide for immunity from antitrust liability. The Court
+of Appeals, having concluded that the Federal Trade Com-
+mission applied an incorrect legal standard, reviewed the
+facts found by the Commission in light of the correct stand-
+ard and reached a different conclusion. This does not consti-
+tute a rejection of the Commission's factual findings.
+I would therefore affirm the judgment below.
+JUSTICE O'CONNOR, with whom JUSTICE THOMAS joins,
+dissenting.
+Notwithstanding its assertions to the contrary, the Court
+has diminished the States' regulatory flexibility by creating
+an impossible situation for those subject to state regulation.
+Even when a State has a "clearly articulated policy" author-
+izing anticompetitive behavior-which the Federal Trade
+Commission concedes was the case here-and even when the
+State establishes a system to supervise the implementation
+of that policy, the majority holds that a federal court may
+later find that the State's supervision was not sufficiently
+"substantial" in its "specifics" to insulate the anticompetitive
+behavior from antitrust liability. Ante, at 635. Given the
+threat of treble damages, regulated entities that have the
+option of heeding the State's anticompetitive policy would be
+foolhardy to do so; those that are compelled to comply are
+less fortunate. The practical effect of today's decision will
+likely be to eliminate so-called "negative option" regulation
+from the universe of schemes available to a State that seeks
+to regulate without exposing certain conduct to federal anti-
+trust liability.
+The Court does not dispute that each of the States at issue
+in this case could have supervised respondents' joint rate-
+making; rather, it argues that "the potential for state super-
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+O'CONNOR, J., dissenting
+vision was not realized in fact." Ante, at 638. Such an
+after-the-fact evaluation of a State's exercise of its supervi-
+sory powers is extremely unfair to regulated parties. Liabil-
+ity under the antitrust laws should not turn on how enthusi-
+astically a state official carried out his or her statutory
+duties. The regulated entity has no control over the regula-
+tor, and very likely will have no idea as to the degree of
+scrutiny that its filings may receive. Thus, a party could
+engage in exactly the same conduct in two States, each of
+which had exactly the same policy of allowing anticompeti-
+tive behavior and exactly the same regulatory structure, and
+discover afterward that its actions in one State were immune
+from antitrust prosecution, but that its actions in the other
+resulted in treble-damages liability.
+Moreover, even if a regulated entity could assure itself
+that the State will undertake to actively supervise its rate
+filings, the majority does not offer any guidance as to what
+level of supervision will suffice. It declares only that the
+State must "pla[y] a substantial role in determining the spe-
+cifics of the economic policy." Ante, at 635. That standard
+is not only ambiguous, but also runs the risk of being coun-
+terproductive. The more reasonable a filed rate, the less
+likely that a State will have to play any role other than sim-
+ply reviewing the rate for compliance with statutory criteria.
+Such a vague and retrospective standard, combined with the
+threat of treble damages if that standard is not satisfied,
+makes "negative option" regulation an unattractive option
+for both States and the parties they regulate.
+Finally, it is important to remember that antitrust actions
+can be brought by private parties as well as by government
+prosecutors. The resources of state regulators are strained
+enough without adding the extra burden of asking them to
+serve as witnesses in civil litigation and respond to allega-
+tions that they did not do their job.
+For these reasons, as well as those given by THE CHIEF
+JUSTICE, I dissent.
+

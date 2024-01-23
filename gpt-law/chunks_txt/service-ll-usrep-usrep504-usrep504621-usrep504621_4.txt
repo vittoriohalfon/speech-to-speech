@@ -1,0 +1,121 @@
+
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+In Wisconsin the State Insurance Commissioner is re-
+quired to examine the rating bureau at regular intervals and
+authorized to reject rates through a process of hearings.
+Neither has been done. The Wisconsin rating bureau made
+major rate filings in 1971, 1981, and 1982. The 1971 rate
+filing was approved in 1971 although supporting justification,
+which had been requested by the State Insurance Commis-
+sioner, was not provided until 1978. The 1981 rate filing
+requested an 11 percent rate increase. The increase was
+approved after the office of the Insurance Commissioner
+checked the supporting data for accuracy. No one in the
+agency inquired into insurer expenses, though an official
+testified that substantive scrutiny would not be possible
+without that inquiry. The 1982 rate increase received but a
+cursory reading at the office of the Insurance Commissioner.
+The supporting materials were not checked for accuracy,
+though in the absence of an objection by the agency, the rate
+increase went into effect. Id., at 196a-200a.
+In Arizona the Insurance Director was required to exam-
+ine the rating bureau at least once every five years. It was
+not done. In 1980 the State Insurance Department an-
+nounced a comprehensive investigation of the rating bureau.
+It was not conducted. The rating bureau spent most of its
+time justifying its escrow rates. Following conclusion in
+1981 of a federal civil suit challenging the joint fixing of es-
+crow rates, the rating bureau went out of business without
+having made any major rate filings, though it had proposed
+minor rate adjustments. Id., at 200a-205a.
+In Montana the rating bureau made its only major rate
+filing in 1983. In connection with it, a representative of the
+rating bureau met with officials of the State Insurance De-
+partment. He was told that the filed rates could go into
+immediate effect though further profit data would have to be
+provided. The ALJ found no evidence that the additional
+data were furnished. Id., at 211a-214a.
+
+NEW PAGE
+
+Cite as: 504 U. S. 621 (1992)
+Opinion of the Court
+To complete the background, the ALJ observed that none
+of the rating bureaus are now active. The respondents
+abandoned them between 1981 and 1985 in response to nu-
+merous private treble-damages suits, so by the time the
+Commission filed its formal complaint in 1985, the rating bu-
+reaus had been dismantled. Id., at 195a, 200a, 205a, 208a.
+The ALJ held that the case is not moot, though, because
+nothing would preclude respondents from resuming the
+conduct challenged by the Commission. Id., at 246a-247a.
+See United States v. W. T Grant Co., 345 U. S. 629, 632-633
+(1953).
+These factual determinations established, the ALJ ad-
+dressed the two-part test that must be satisfied for state-
+action immunity under the antitrust laws, the test we set out
+in CaliforniaR etail Liquor Dealers Assn. v. Midcal Alumi-
+num, Inc., 445 U. S. 97 (1980). A state law or regulatory
+scheme cannot be the basis for antitrust immunity unless,
+first, the State has articulated a clear and affirmative policy
+to allow the anticompetitive conduct, and second, the State
+provides active supervision of anticompetitive conduct un-
+dertaken by private actors. Id., at 105. The Commission
+having conceded that the first part of the test was satisfied
+in the four States still at issue, the immunity question, begin-
+ning with the hearings before the ALJ and in all later pro-
+ceedings, has turned upon the proper interpretation and
+application of Midcal's active supervision requirement. The
+ALJ found the active supervision test was met in Arizona
+and Montana but not in Connecticut or Wisconsin. App. to
+Pet. for Cert. 248a.
+On review of the ALJ's decision, the Commission held that
+none of the four States had conducted sufficient supervision,
+so that the title companies were not entitled to immunity in
+any of those jurisdictions. Id., at 47a. The Court of Ap-
+peals for the Third Circuit disagreed with the Commission,
+adopting the approach of the First Circuit in New England
+Motor Rate Bureau, Inc. v. FTC, 908 F. 2d 1064 (1990), which
+
+NEW PAGE
+
+FTC v. TICOR TITLE INS. CO.
+Opinion of the Court
+had held that the existence of a state regulatory program, if
+staffed, funded, and empowered by law, satisfied the require-
+ment of active supervision. Id., at 1071. Under this stand-
+ard, the Court of Appeals for the Third Circuit ruled that
+the active state supervision requirement was met in all four
+States and held that the respondents' conduct was entitled
+to state-action immunity in each of them. 922 F. 2d, at 1140.
+We granted certiorari to consider two questions: First,
+whether the Third Circuit was correct in its statement of the
+law and in its application of law to fact, and second, whether
+the Third Circuit exceeded its authority by departing from
+the factual findings entered by the ALJ and adopted by the
+Commission. Before this Court, the parties have confined
+their briefing on the first of these questions to the regulatory
+regimes of Wisconsin and Montana, and focused on the regu-
+latory regimes of Connecticut and Arizona in briefing on the
+second question. We now reverse the Court of Appeals
+under the first question and remand for further proceedings
+under the second.
+II
+The preservation of the free market and of a system of
+free enterprise without price fixing or cartels is essential to
+economic freedom. United States v. Topco Associates, Inc.,
+405 U. S. 596, 610 (1972). A national policy of such a perva-
+sive and fundamental character is an essential part of the
+economic and legal system within which the separate States
+administer their own laws for the protection and advance-
+ment of their people. Continued enforcement of the national
+antitrust policy grants the States more freedom, not less, in
+deciding whether to subject discrete parts of the economy
+to additional regulations and controls. Against this back-
+ground, in Parkerv . Brown, 317 U. S. 341 (1943), we upheld
+a state-supervised, market sharing scheme against a Sher-
+man Act challenge. We announced the doctrine that federal
+antitrust laws are subject to supersession by state regula-
+
