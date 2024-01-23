@@ -1,0 +1,1120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29200\viewh15800\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 00:00:00.320 in today's video we're going to walk\
+00:00:01.920 through a natural language processing\
+00:00:04.080 project from start to finish by doing\
+00:00:06.720 sentiment analysis on amazon reviews\
+00:00:09.760 sentiment analysis it's the use of\
+00:00:12.080 natural language processing to identify\
+00:00:14.960 the motions behind text we're going to\
+00:00:17.760 walk through a traditional approach to\
+00:00:20.000 sentiment analysis using python's\
+00:00:22.800 natural language toolkit or nltk\
+00:00:26.080 and then we'll implement\
+00:00:27.840 a more complex model called roberta\
+00:00:31.199 that's provided by hugging face\
+00:00:33.600 we'll do some analysis of how the\
+00:00:35.280 different models perform and we'll even\
+00:00:37.600 explore using some pre-trained pipelines\
+00:00:41.120 for making sentiment analysis\
+00:00:43.440 really quick and easy hi my name is rob\
+00:00:46.239 and i make videos about data science\
+00:00:48.399 machine learning and coding in python\
+00:00:51.360 i'm going to share everything we do\
+00:00:52.719 today in a kaggle notebook so you can\
+00:00:54.879 find the link in the description\
+00:00:57.039 copy that notebook and explore all the\
+00:00:59.680 stuff that we would do today if you do\
+00:01:01.680 enjoy this video please consider\
+00:01:03.199 subscribing liking and follow me on\
+00:01:06.240 twitch where i stream live coding all\
+00:01:08.640 right let's get to the code okay so here\
+00:01:11.040 we are in a kaggle notebook\
+00:01:13.040 you can see this is the basic outline of\
+00:01:15.840 what we're going to be talking about\
+00:01:16.880 today we're going to be doing some\
+00:01:18.880 sentiment analysis in python and we're\
+00:01:20.960 going to use two main techniques the\
+00:01:23.520 first one\
+00:01:24.720 is the older kind of way of approaching\
+00:01:27.600 sentiment analysis with a model called\
+00:01:30.320 vader and this uses a bag of words\
+00:01:33.680 approach and then we're gonna look at a\
+00:01:36.079 pre-trained model from hugging face\
+00:01:38.960 that's a roberta type model and this is\
+00:01:41.920 a more advanced transformer model that\
+00:01:45.280 we're going to see how the results\
+00:01:46.640 compare between those two models\
+00:01:49.040 and then we're going to also explore a\
+00:01:50.799 hugging face pipeline\
+00:01:53.360 but before we get into that let's talk\
+00:01:55.119 about the data and do some basic\
+00:01:57.840 analysis with the natural language\
+00:02:00.640 toolkit which is a great library for\
+00:02:03.040 python i'm going to show you over here\
+00:02:04.799 to the right side that we are going to\
+00:02:06.799 use this data set that is a bunch of\
+00:02:10.000 amazon fine food reviews so these are\
+00:02:13.680 text reviews for food on amazon as well\
+00:02:17.840 as the rating that out of five stars\
+00:02:20.800 that the reviewer gave them\
+00:02:23.280 and all of this is in csv format that\
+00:02:26.160 we're going to pull in\
+00:02:28.000 so before we get too far into it\
+00:02:30.959 let's do some of our imports we are\
+00:02:34.160 going to let's give it some space here\
+00:02:36.879 we're going to import pandas as pd we're\
+00:02:39.920 going to import numpy\
+00:02:42.879 it for some plotting we'll import\
+00:02:44.720 matplotlib\
+00:02:49.040 pi plot as plt\
+00:02:51.280 and we're going to import\
+00:02:53.120 seaborn as sns\
+00:02:57.440 let's\
+00:02:58.239 set a style sheet that we'll use for our\
+00:03:00.239 plots\
+00:03:02.560 and then we're going to just to start\
+00:03:04.560 out here import\
+00:03:06.840 nltk which is that natural language\
+00:03:09.680 toolkit we'll be using for the start\
+00:03:12.640 let's go ahead and read in our data so\
+00:03:16.000 let's comment here and say read in\
+00:03:18.879 data and we're going to read in from the\
+00:03:21.360 input directory\
+00:03:24.640 there is this reviews.csv\
+00:03:27.920 and after i read this in\
+00:03:31.599 i can show you here\
+00:03:33.360 just in head command on this\
+00:03:37.680 that in this data set we have each row\
+00:03:40.640 is the unique id we have the product id\
+00:03:43.440 user id profile name and then the real\
+00:03:46.480 interesting stuff here is the score so\
+00:03:49.680 this is out of a one to five star rating\
+00:03:52.799 how many stars the reviewer gave this\
+00:03:54.799 item and then the text it's a little\
+00:03:57.200 small to see here\
+00:03:59.360 but you can see\
+00:04:01.920 if i just do the text row and i show us\
+00:04:04.480 the first one it's actual text with the\
+00:04:08.080 review that was written by the reviewer\
+00:04:11.040 for this product and we're going to be\
+00:04:13.120 running our sentiment analysis on this\
+00:04:15.920 row of data in this entire data set\
+00:04:19.279 but actually this data set if i print\
+00:04:21.358 the shape\
+00:04:24.720 is quite large there are almost half a\
+00:04:27.919 million reviews here and just for time's\
+00:04:31.280 sake let's down sample this data set so\
+00:04:34.400 i can do that pretty simply by just\
+00:04:36.160 doing a head command on this and taking\
+00:04:38.160 the first 500 rows\
+00:04:40.400 and then if we print the data frame\
+00:04:42.800 shape after that we'll see that it's\
+00:04:46.000 500 rows but you could scale up this\
+00:04:49.040 project very easily to all half a\
+00:04:51.840 million\
+00:04:53.199 products if you wanted to\
+00:04:55.520 run a more intense analysis so then i'll\
+00:04:58.720 just put the data frame head command\
+00:05:00.479 here so we can see and reference back to\
+00:05:02.960 what columns we have available to us\
+00:05:05.919 now let's do some\
+00:05:07.919 quick\
+00:05:08.840 eda just to get an idea of what this\
+00:05:11.600 data set looks like so we'll take this\
+00:05:14.720 score column which we know to be a value\
+00:05:16.880 between 1 and 5\
+00:05:18.960 and we're going to do a value counts on\
+00:05:20.880 this\
+00:05:21.919 this gives us the number of times each\
+00:05:24.880 score occurs\
+00:05:26.479 and then we'll sort the index\
+00:05:29.440 and we'll do just a bar plot of this\
+00:05:32.320 kind will be a bar plot and the title is\
+00:05:35.199 going to be count of reviews\
+00:05:38.639 by stars\
+00:05:41.520 and let's also do a fig size of\
+00:05:44.720 10 by five\
+00:05:48.400 plot that\
+00:05:49.919 and let's add a label to it so i'm going\
+00:05:52.560 to do a\
+00:05:53.759 some line breaks here to clean this up\
+00:05:56.240 and we're going to call this our axis\
+00:05:59.520 and then i'm going to\
+00:06:02.240 set the x label\
+00:06:04.160 as\
+00:06:05.120 review stars\
+00:06:07.919 and we will do plt show\
+00:06:11.039 all right so we can see here that\
+00:06:13.039 most of the reviews are actually 5 stars\
+00:06:16.240 but then\
+00:06:17.360 it kind of goes down it has a little\
+00:06:19.199 uptick in the number of one star reviews\
+00:06:21.680 we have so\
+00:06:23.039 the\
+00:06:24.080 very biased towards positive reviews in\
+00:06:27.039 our data set that's good to know before\
+00:06:28.720 we get any further\
+00:06:30.400 now um the next thing we'll do is just\
+00:06:32.400 some basic and nltk stuff\
+00:06:38.960 and we'll start by just taking one\
+00:06:41.199 example\
+00:06:42.720 review so let's do example equals this\
+00:06:46.240 text column and just pick the 50th value\
+00:06:49.280 as an example and we'll print this\
+00:06:51.120 example\
+00:06:53.039 all right so what did this person say\
+00:06:54.800 they said this oatmeal is not good it's\
+00:06:58.080 mushy soft i don't like it quaker oats\
+00:07:00.160 is where you go okay so\
+00:07:02.560 uh seems to be negative sentiment here\
+00:07:05.840 but before we get into that let's just\
+00:07:07.440 see some of the stuff that nltk can do\
+00:07:09.680 out of the box um nltk can t tokenize\
+00:07:13.759 this sentence\
+00:07:15.039 so\
+00:07:15.759 let's taste this example and run l ntk\
+00:07:19.280 word tokenizer and all that basically\
+00:07:21.520 does is splits this\
+00:07:23.680 into\
+00:07:25.120 uh the parts of each word\
+00:07:28.639 in the sentence now it looks pretty\
+00:07:30.639 clear clean at the beginning but then\
+00:07:33.039 you can see that\
+00:07:34.479 um i don't\
+00:07:36.560 do an n apostrophe t is split so this is\
+00:07:40.240 a little bit smarter than just splitting\
+00:07:42.800 on spaces in the\
+00:07:44.400 the text and this will give us our\
+00:07:46.720 actual tokenized\
+00:07:48.879 results\
+00:07:50.080 in natural language processing\
+00:07:52.720 often you need to convert the text into\
+00:07:55.599 some format that the computer can\
+00:07:58.319 interpret and tokenizing that is the way\
+00:08:01.280 that you do it so let's make this the\
+00:08:03.360 tokens\
+00:08:05.039 and then take the tokens and let's just\
+00:08:07.280 show the first 10 so we can remember\
+00:08:09.199 what this looks\
+00:08:10.840 like all right so\
+00:08:13.599 now once we have these\
+00:08:15.120 tokens another thing nltk can do out of\
+00:08:17.840 the box is actually find the part of\
+00:08:19.919 speech\
+00:08:21.039 for\
+00:08:21.840 each of these words so let's run nltk's\
+00:08:26.560 pos tag for part of speech tagging and\
+00:08:29.599 we'll run this on each of these tokens\
+00:08:33.679 now we can see that we have each token\
+00:08:35.679 and we also have its part of speech so\
+00:08:38.479 these part of speech values\
+00:08:40.958 are\
+00:08:42.000 codes and we can actually load up an\
+00:08:44.959 example page that has\
+00:08:48.000 some examples of\
+00:08:50.000 what each abbreviation means so\
+00:08:53.200 let's go back here to our example not\
+00:08:55.920 here\
+00:08:57.839 so you can see that oatmeal is nnn\
+00:09:00.880 and in our part of speech tagging that\
+00:09:03.440 means it's a noun a singular noun\
+00:09:06.399 so each of the values in this text has\
+00:09:08.800 now been given its part of speech so\
+00:09:11.279 let's call this tagged\
+00:09:15.760 and then let's just show the first 10\
+00:09:17.600 again\
+00:09:18.800 as our example\
+00:09:22.080 um now it can actually we can take it\
+00:09:24.720 the next step from this and take these\
+00:09:27.120 tags part of speech and put them into\
+00:09:30.240 entities so\
+00:09:31.920 nltk\
+00:09:34.240 we can do a chunk on this\
+00:09:37.120 and then n e chunk so\
+00:09:40.240 this\
+00:09:41.920 uh takes the recommended name entity\
+00:09:44.720 chunker to chunk the given list of\
+00:09:47.040 tokens so it takes these tokens and\
+00:09:49.360 actually will group them into chunks of\
+00:09:52.320 text so let's run it on this to see what\
+00:09:54.959 it looks like\
+00:09:57.780 [Music]\
+00:10:02.480 what are we getting here\
+00:10:05.120 oh yeah so we need to\
+00:10:08.320 store this\
+00:10:10.399 because we're running in a notebook and\
+00:10:12.320 then we'll actually run entities dot p\
+00:10:15.920 print\
+00:10:16.959 for pretty print of this\
+00:10:19.279 so you can see that it's\
+00:10:21.200 chunked this into a sentence\
+00:10:23.519 and\
+00:10:24.399 noted here that this is an organization\
+00:10:27.920 some other\
+00:10:31.040 interesting stuff about the\
+00:10:33.440 text that can be extracted out\
+00:10:35.200 automatically using an nltk\
+00:10:38.240 all right so that's just a basic primer\
+00:10:40.480 about nltk\
+00:10:42.800 but we want to get into sentiment\
+00:10:45.600 analysis so we're going to start by\
+00:10:48.000 using\
+00:10:49.040 vader vader stands for\
+00:10:52.240 what does vader stand for\
+00:10:54.480 it stands for i wrote up here balance\
+00:10:57.040 aware dictionary and sentiment reasoner\
+00:11:00.720 so this approach\
+00:11:02.720 essentially just takes\
+00:11:04.640 all the words in our sentence\
+00:11:06.800 and it has a value of either positive\
+00:11:10.160 negative or neutral for each of those\
+00:11:12.399 words\
+00:11:13.360 and it combines up it just does a math\
+00:11:15.440 equation and\
+00:11:17.680 for all the words it'll add up to tell\
+00:11:19.839 you how positive negative or neutral\
+00:11:22.640 that the statement is\
+00:11:24.640 based on all those words now one thing\
+00:11:26.640 to keep in mind is this approach does\
+00:11:29.279 not account for relationships between\
+00:11:31.839 words which in\
+00:11:34.240 human speech is very important\
+00:11:36.959 but at least is a good start so\
+00:11:40.480 we also remove something called stop\
+00:11:42.480 words stop words are just words like\
+00:11:45.600 and and the and words that really don't\
+00:11:48.560 have a positive or negative feeling\
+00:11:51.120 uh to them they're just for the\
+00:11:52.959 structure of the sentence\
+00:11:54.880 all right so let's do\
+00:11:56.480 some\
+00:11:57.920 uh sentiment analysis using this\
+00:12:01.120 vader approach we're gonna do from nltk\
+00:12:05.200 sentiment\
+00:12:07.760 sentiment\
+00:12:09.440 import sentiment intensity\
+00:12:12.720 analyzer\
+00:12:14.079 and then we're going to also import from\
+00:12:16.720 tqdm notebook\
+00:12:19.279 import tqdm this is just a progress bar\
+00:12:21.920 tracker for when we're going to do some\
+00:12:23.600 loops on this data i also made a video\
+00:12:26.480 about tqdm that you can watch if you're\
+00:12:28.560 interested\
+00:12:30.000 and then we're going to make our\
+00:12:31.040 sentiment\
+00:12:32.399 analyzer object by calling this\
+00:12:34.720 sentiment\
+00:12:36.000 intensity analyzer creating it and\
+00:12:38.800 calling it s i a and that's going to be\
+00:12:41.680 what we're\
+00:12:42.800 the object\
+00:12:44.000 uh let me make sure\
+00:12:47.600 oh yeah this needs to be from\
+00:12:50.079 tqdm notebook input cdm and now we have\
+00:12:53.440 our sentiment\
+00:12:55.120 intensity\
+00:12:56.560 analyzer object we can run this on text\
+00:13:00.480 and see\
+00:13:02.000 uh what the sentiment is based on the\
+00:13:04.320 words so let's run just on some examples\
+00:13:07.839 let's say\
+00:13:09.200 i am so happy an exclamation point\
+00:13:12.720 we can see that\
+00:13:14.160 this vader approach has made this has\
+00:13:17.360 tagged this negative as zero\
+00:13:20.720 this these are scales from zero to one\
+00:13:22.800 so\
+00:13:23.600 zero negative\
+00:13:25.200 neutral point three and positive point\
+00:13:27.680 six eight two so mostly\
+00:13:30.000 positive now there's also this compound\
+00:13:32.560 score which is an aggregation of\
+00:13:35.279 negative neutral and positive this count\
+00:13:37.760 com\
+00:13:38.880 compound value is from negative one to\
+00:13:42.320 positive one representing how negative\
+00:13:44.959 to positive it is\
+00:13:46.800 but if you want more detail you can take\
+00:13:48.800 the breakdown of this negative neutral\
+00:13:50.800 and positive\
+00:13:52.079 so it did a good job it made this\
+00:13:54.720 it tagged this as being mostly positive\
+00:13:57.440 let's try the opposite so s-i-a\
+00:14:00.560 polarity scores of this is the worst\
+00:14:04.079 thing ever\
+00:14:07.040 all right now we see that the polarity\
+00:14:09.199 score\
+00:14:10.079 polarity score for this is\
+00:14:12.800 mostly negative and neutral\
+00:14:16.160 and nothing positive\
+00:14:18.000 and then this compound score is\
+00:14:21.440 net point\
+00:14:23.040 negative 0.62 so more on the negative\
+00:14:26.079 side than positive\
+00:14:28.399 very interesting now we can run sia on\
+00:14:31.920 our example\
+00:14:33.519 like that we had before remember our\
+00:14:35.519 example which was\
+00:14:38.320 this oatmeal comment let's run that on\
+00:14:42.720 the oatmeal comment\
+00:14:45.040 and see what it is okay so\
+00:14:47.199 it's pretty high neutral but also some\
+00:14:49.920 negative\
+00:14:51.040 and the overall compound score is\
+00:14:53.600 negative no positive score\
+00:14:56.480 so we want to run this\
+00:15:00.800 polarity score\
+00:15:03.199 run the polarity score\
+00:15:06.399 on the entire data set so basically\
+00:15:10.079 looping through this data frame we have\
+00:15:13.360 every text field we wanna\
+00:15:16.079 run this and grab the polarity scores\
+00:15:19.600 and we can do that with a simple\
+00:15:21.760 loop so\
+00:15:23.600 we're gonna do\
+00:15:25.040 for\
+00:15:26.079 d which is going to be just our row or\
+00:15:28.079 we can just say four row and t qdm\
+00:15:31.519 df dot itter\
+00:15:34.160 rows\
+00:15:35.839 and then our total is going to be yeah\
+00:15:38.160 so then this should work i think and\
+00:15:40.240 then we're gonna take\
+00:15:42.399 um\
+00:15:43.839 the row\
+00:15:45.839 text\
+00:15:47.680 and this will be\
+00:15:48.959 tech our text\
+00:15:50.480 and then we're also gonna take our we're\
+00:15:53.360 going to call it my id which is the rows\
+00:15:56.160 id\
+00:15:57.360 column and then let's just break here to\
+00:15:59.440 make sure we have this correctly\
+00:16:04.639 oh that's correct this is going to be\
+00:16:06.560 for i row in tqdm iter tuples uh it\
+00:16:11.120 arrows and then we'll also make the\
+00:16:12.560 total of this the length of the data\
+00:16:15.120 frame so that when we see our progress\
+00:16:17.040 bar it's out of 500\
+00:16:19.920 we're going to want some way to store\
+00:16:22.399 these results so let's make a dictionary\
+00:16:25.920 called\
+00:16:28.000 res for results and every time we loop\
+00:16:30.720 through\
+00:16:31.680 we'll take my id we'll store in the my\
+00:16:35.040 id part of the dictionary\
+00:16:37.120 the polarity score score\
+00:16:39.839 polarity score of the text\
+00:16:42.880 right\
+00:16:44.399 and then\
+00:16:46.160 yeah that's it let's run this\
+00:16:48.639 so really fast it ran it's done\
+00:16:51.440 and um now we have this result\
+00:16:55.120 uh dictionary with each id the negative\
+00:16:58.399 neutral positive and compound score of\
+00:17:01.120 each\
+00:17:02.480 but we want to store this\
+00:17:05.280 into a pandas data frame because that's\
+00:17:08.319 easier to work with\
+00:17:10.160 let's\
+00:17:11.520 do that really quickly by just running\
+00:17:13.959 pd.dataframe on this dictionary pandas\
+00:17:16.720 can take in a dictionary pretty easily\
+00:17:19.760 except for it's oriented the wrong way\
+00:17:22.160 so let's just quickly run a dot t on\
+00:17:25.439 this which will flip everything\
+00:17:27.359 horizontally and now we have an index\
+00:17:29.760 which is our id and then our negative\
+00:17:32.080 neutral positive and our compound\
+00:17:36.559 score for the sentiment for each of\
+00:17:38.640 those\
+00:17:39.520 values\
+00:17:40.559 all right let's call this vader's\
+00:17:43.600 that's our vader's result\
+00:17:45.760 and then let's also\
+00:17:48.400 let's take this vaders\
+00:17:51.280 and let's reset the index\
+00:17:53.760 and rename that index\
+00:17:58.960 as our id so we can merge this onto our\
+00:18:02.640 original data frame\
+00:18:04.960 and then we're going to take vader's\
+00:18:07.360 so\
+00:18:08.400 vader's\
+00:18:09.679 will now be this and then we'll also\
+00:18:12.480 take vader's and we're going to merge it\
+00:18:15.120 on our original data frame and how we'll\
+00:18:17.840 do a left merge\
+00:18:19.840 so now basically we have our data frame\
+00:18:22.400 but with our\
+00:18:24.080 scores\
+00:18:25.760 and we also have all the other values\
+00:18:28.559 from our original data set including\
+00:18:31.600 the text so if i run a head on this we\
+00:18:34.400 can see\
+00:18:36.480 now we have\
+00:18:38.720 sentiment\
+00:18:39.919 score\
+00:18:40.960 and metadata\
+00:18:46.640 all right so let's see\
+00:18:48.880 um\
+00:18:51.280 let's see\
+00:18:52.880 if this in general\
+00:18:55.360 is in line with what we would expect so\
+00:18:58.160 we're gonna make some assumptions here\
+00:18:59.760 about our data\
+00:19:01.200 that if the score of the item that the\
+00:19:04.240 reviewer gave it is a five star review\
+00:19:07.520 it's probably going to be more positive\
+00:19:09.760 of text than if it was a score of one\
+00:19:14.640 one star review is going to have more\
+00:19:16.080 negative connotation than\
+00:19:18.080 a five star\
+00:19:19.840 review and we can do that by just doing\
+00:19:22.240 a simple bar plot so let's use seaborne\
+00:19:26.320 i think i imported seaborne yeah i\
+00:19:28.400 imported keyboard before and we're going\
+00:19:30.400 to do a bar plot of this data\
+00:19:33.120 where our data is vader's\
+00:19:37.039 let's call this\
+00:19:38.480 plot\
+00:19:40.160 vader results\
+00:19:43.600 and our x value is going to be the score\
+00:19:46.880 which remember is the\
+00:19:49.120 star review of the\
+00:19:51.200 the person and then compound\
+00:19:54.160 is going to be our y value and that's\
+00:19:56.480 the\
+00:19:57.280 negative one to positive one\
+00:20:00.000 overall\
+00:20:01.600 um\
+00:20:02.880 sentiment of\
+00:20:04.840 the of the um\
+00:20:07.520 text\
+00:20:09.039 then let's set the title to be\
+00:20:11.280 compound\
+00:20:12.640 score\
+00:20:15.039 by amazon\
+00:20:17.600 stars\
+00:20:19.039 review\
+00:20:20.640 and then we'll show this\
+00:20:24.720 what did i do wrong here\
+00:20:27.679 i spelled compound wrong\
+00:20:30.559 comp\
+00:20:31.760 bound\
+00:20:33.440 there we go okay so\
+00:20:35.760 one star review has\
+00:20:38.000 lower compound score and a five star\
+00:20:41.200 view is higher and it's actually exactly\
+00:20:43.120 what we would expect the more\
+00:20:45.679 uh positive that the compound becomes\
+00:20:48.240 that's the more\
+00:20:49.840 um\
+00:20:50.880 well by each score that was given it's\
+00:20:54.159 more and more positive of\
+00:20:56.640 text\
+00:20:57.840 respectively and that's uh that's good\
+00:21:00.080 that just kind of validates what we're\
+00:21:01.679 looking for\
+00:21:03.200 we can even break this down instead of\
+00:21:05.200 looking at the compound score we can\
+00:21:07.520 look at the positive\
+00:21:09.280 neutral and negative scores for each so\
+00:21:12.480 we're going to do that by doing\
+00:21:14.480 something like sns bar plot\
+00:21:17.600 data is vader's again\
+00:21:21.280 x is score again and then let's do\
+00:21:24.640 the positive\
+00:21:27.520 and\
+00:21:28.400 see what this looks like all right so\
+00:21:29.760 this is the positive score and let's\
+00:21:32.159 actually make three of these side by\
+00:21:33.840 side uh left being positive neutral and\
+00:21:36.799 then the negative to the right and we'll\
+00:21:39.360 do that with\
+00:21:40.559 matplotlib subplots\
+00:21:43.520 so this will make a 1 by 3 grid\
+00:21:47.520 of our results\
+00:21:49.520 and we will\
+00:21:51.760 call this axes\
+00:21:54.159 put this first one here which will be\
+00:21:55.919 our\
+00:21:56.840 positive then we want our\
+00:22:00.960 neutral\
+00:22:02.080 and then we want the negative and this\
+00:22:04.320 is going to be in position one two and\
+00:22:06.240 three and then let's also\
+00:22:10.320 set the title so we remember what these\
+00:22:12.159 are positive\
+00:22:18.159 neutral\
+00:22:22.080 and\
+00:22:23.520 negative\
+00:22:24.960 and plots show this\
+00:22:28.760 [Music]\
+00:22:31.280 oh this needs to be ax equals\
+00:22:38.799 and i need to change each of these\
+00:22:42.880 there we go\
+00:22:44.799 now we have\
+00:22:46.080 um\
+00:22:47.440 let's see what we have here let's make\
+00:22:49.039 this a little\
+00:22:50.240 less wide\
+00:22:51.679 we have the positive\
+00:22:54.159 positivity is higher as the score is\
+00:22:57.600 higher in terms of stars the neutral is\
+00:22:59.919 kind of flat and the negative goes down\
+00:23:02.880 it becomes less negative of a comet as\
+00:23:05.120 the star review becomes higher great\
+00:23:08.080 this just confirms what we would hope to\
+00:23:10.720 see and shows that vader is valuable\
+00:23:13.679 in having this connection between\
+00:23:16.240 the\
+00:23:17.200 score\
+00:23:18.159 of the text and sentiment score and that\
+00:23:21.360 it does relate to the actual um\
+00:23:25.360 the actual\
+00:23:26.799 rating review of the reviewers uh let's\
+00:23:29.520 do a tight\
+00:23:30.960 layout\
+00:23:32.080 just because i see some overlapping here\
+00:23:34.320 of\
+00:23:35.200 of the review of the\
+00:23:37.600 y-axis labels but i think this is good\
+00:23:40.159 all right\
+00:23:41.279 so now we're going to take it up a notch\
+00:23:44.159 our previous model just looked at each\
+00:23:46.640 word in the sentence or in the review\
+00:23:49.520 and scored each word individually but\
+00:23:52.480 like we mentioned before\
+00:23:54.720 human language depends a lot about a lot\
+00:23:57.679 on context so if i say\
+00:24:02.240 something uh we'll see a sentence that\
+00:24:05.120 could have negative words actually could\
+00:24:07.600 be sarcastic or related to other words\
+00:24:10.799 in which way it makes it a positive\
+00:24:13.120 statement\
+00:24:14.559 so\
+00:24:15.679 this uh vader model wouldn't pick up on\
+00:24:18.240 that sort of\
+00:24:20.240 relationship between words but more and\
+00:24:22.559 more\
+00:24:23.360 recently\
+00:24:24.480 these transformer based deep learning\
+00:24:26.960 models have become\
+00:24:28.480 very popular because they can pick up on\
+00:24:31.120 that context so we're going to use from\
+00:24:34.400 hugging face which is one of the leaders\
+00:24:36.559 in these types of models and gathering\
+00:24:38.640 them and making them easily available\
+00:24:41.360 we're going to import from transformers\
+00:24:45.120 now this is hugging faces library you\
+00:24:47.279 could pip install transformers to get\
+00:24:49.440 this on your local machine\
+00:24:51.279 or\
+00:24:52.480 um of course you can just\
+00:24:56.400 run it in a\
+00:24:57.679 kaggle notebook like we are right now\
+00:25:02.240 so let me make sure this works from\
+00:25:04.480 transformers we're gonna\
+00:25:06.159 import our auto tokenizer now this is\
+00:25:08.400 gonna tokenize similar to what we showed\
+00:25:10.400 nltk can do\
+00:25:12.400 and then from transformers\
+00:25:16.400 we're gonna import\
+00:25:18.080 auto\
+00:25:20.080 model\
+00:25:22.559 for\
+00:25:23.520 let's auto complete here\
+00:25:26.840 for sequence\
+00:25:29.440 classification you can see that there\
+00:25:30.960 are a lot of different types of models\
+00:25:33.200 that hugging face has and then we're\
+00:25:35.039 also going to import from sci pi\
+00:25:37.840 special\
+00:25:41.200 um\
+00:25:42.960 soft max which we will apply to the\
+00:25:45.200 outputs because they don't have soft max\
+00:25:47.679 applied and this will smooth out between\
+00:25:50.799 zero and one all right special spell\
+00:25:53.440 that\
+00:25:54.840 correctly right and then we're going to\
+00:25:56.799 pull in a very specific model that has\
+00:25:59.679 been pre-trained on a bunch of data\
+00:26:03.360 um\
+00:26:04.559 for\
+00:26:05.279 sentiment exactly like we're trying to\
+00:26:07.440 do\
+00:26:08.480 this is provided by hugging face and\
+00:26:11.360 when we\
+00:26:12.400 run the auto tokenizer in the auto model\
+00:26:14.880 sequence classification methods and load\
+00:26:17.520 it from a pre-trained model it'll pull\
+00:26:20.000 down\
+00:26:20.880 the model weights that have been stored\
+00:26:23.200 and this is really great because we're\
+00:26:25.520 essentially doing transfer learning this\
+00:26:28.159 model was trained on a bunch of twitter\
+00:26:30.000 comments that were labeled and we don't\
+00:26:32.080 have to retrain the model at all we can\
+00:26:34.159 just use these trained weights and apply\
+00:26:36.320 it to our data set and see what comes\
+00:26:38.159 out\
+00:26:41.279 so\
+00:26:42.080 anytime you do this the first time you\
+00:26:44.320 will see that it needs to download all\
+00:26:46.640 of the weights this is expected\
+00:26:53.840 and now that's finished now we have a\
+00:26:55.520 model and a tokenizer that we can apply\
+00:26:58.000 to the text so let's remember what our\
+00:27:00.960 example was before now this is this\
+00:27:03.600 oatmeal comment when our polarity score\
+00:27:07.360 from the old type of model\
+00:27:09.919 look like this\
+00:27:12.480 let's call this the\
+00:27:13.840 vader results\
+00:27:15.919 on example\
+00:27:18.960 remember negative neutral\
+00:27:21.360 and we want to run this though\
+00:27:24.640 on\
+00:27:25.440 using the roberta model that we've\
+00:27:28.080 pulled so we just need to take a few\
+00:27:30.960 steps so before we can run it on\
+00:27:34.880 roberta\
+00:27:36.880 model and that's uh first thing is\
+00:27:39.039 encoding the text so we're going to take\
+00:27:41.200 our tokenizer that we pulled in we're\
+00:27:43.919 going to apply it to this example\
+00:27:47.200 and return\
+00:27:50.720 return\
+00:27:51.919 tensors\
+00:27:53.440 is going to be pt for pi torch and then\
+00:27:56.159 encoded let's call this\
+00:27:59.200 you can see here this is the encoded\
+00:28:00.960 text so this is taking\
+00:28:03.120 that text and putting it into\
+00:28:06.159 ones and zeroes that embeddings that the\
+00:28:09.360 model will understand we'll call this\
+00:28:11.600 our ink coded text\
+00:28:16.320 then we're going to take that and we're\
+00:28:17.919 going to run our model on it it's just\
+00:28:19.840 that simple so we're going to take this\
+00:28:21.840 encoded text\
+00:28:24.240 run our model on it and this will be our\
+00:28:26.240 output\
+00:28:28.399 and then you remember how we\
+00:28:30.480 so this is what the output looks like\
+00:28:32.080 it's a tensor\
+00:28:34.240 with our results\
+00:28:35.760 and then we're gonna take that output\
+00:28:39.120 take it from being a tensor\
+00:28:41.679 and\
+00:28:42.799 make it into numpy so that we can\
+00:28:45.760 store it\
+00:28:47.279 locally so let's detach this\
+00:28:49.919 and then numpy\
+00:28:52.080 and\
+00:28:53.159 store this\
+00:28:55.200 as scores\
+00:28:58.640 and then the last thing we're going to\
+00:28:59.760 do is just apply that soft max\
+00:29:02.640 to the these scores that we imported\
+00:29:05.279 soft max layer\
+00:29:07.039 um\
+00:29:07.840 like this\
+00:29:10.720 now if we print our scores\
+00:29:13.520 we see that we have three different\
+00:29:15.440 values in a numpy array now these are\
+00:29:18.000 similar to the last type of\
+00:29:20.799 model that we ran so basically this is\
+00:29:24.480 the negative the neutral and the\
+00:29:26.960 positive score for this text so let's\
+00:29:30.799 make a scores dictionary where we will\
+00:29:33.760 store this\
+00:29:35.279 and we'll put in\
+00:29:37.840 roberta\
+00:29:40.159 negative is going to be the first value\
+00:29:44.000 and then we'll just do\
+00:29:48.000 like this\
+00:29:49.120 negative\
+00:29:51.440 neutral\
+00:29:52.720 and positive and this will be 0 1 2\
+00:29:57.279 and we'll print this\
+00:29:59.279 scores\
+00:30:01.919 dictionary\
+00:30:05.520 need a comma here\
+00:30:07.600 there we go all right so the roberta\
+00:30:09.840 model\
+00:30:11.120 much more than the vader model thinks\
+00:30:14.000 that this comment is negative which from\
+00:30:17.120 reading it\
+00:30:18.240 seems to make sense this is a very\
+00:30:20.000 negative\
+00:30:22.240 review of this product\
+00:30:24.480 so\
+00:30:25.200 already here we can see\
+00:30:26.960 sort of how much more powerful roberta\
+00:30:29.840 is than just a vader model\
+00:30:33.600 let's go ahead and run this on the\
+00:30:36.320 entire data set like we did before with\
+00:30:38.559 the vader model so we can do this pretty\
+00:30:41.760 easily by just making a function out of\
+00:30:44.559 the code that we did before called\
+00:30:46.799 polarity\
+00:30:48.240 scores roberta\
+00:30:50.640 where it takes an example like our code\
+00:30:53.279 did before and it runs all of this and\
+00:30:56.240 it just returns\
+00:30:58.880 scores\
+00:31:00.320 dictionary\
+00:31:02.080 so now we could run this on one example\
+00:31:04.080 of text and get this\
+00:31:06.320 scores dictionary like we had written\
+00:31:08.399 the code for\
+00:31:09.519 above and we're going to enter iterate\
+00:31:12.640 over the data set just like we did\
+00:31:14.399 before so let's take this\
+00:31:17.679 code from abort above where we iterated\
+00:31:27.279 and we have our we're going to call this\
+00:31:30.000 our\
+00:31:31.440 vader result because we'll still run the\
+00:31:35.039 vader text on this\
+00:31:37.200 and then we'll also have\
+00:31:40.080 our roberto results\
+00:31:45.120 which is gonna be\
+00:31:46.559 the polarity scores roberta function\
+00:31:49.039 that we had written\
+00:31:52.240 on this text\
+00:31:54.799 and we'll break here after the first one\
+00:31:57.440 just to see how it ran on the first\
+00:32:00.960 iteration through so we see we have our\
+00:32:03.200 veda results and we also have\
+00:32:05.919 our roberta results it's exactly what we\
+00:32:08.559 wanted and we also want to combine these\
+00:32:10.559 so the way we can combine two\
+00:32:12.080 dictionaries\
+00:32:13.360 is\
+00:32:14.640 there's a way to do it with the newer\
+00:32:16.320 version of python but we're running an\
+00:32:18.399 older version so we'll just do it like\
+00:32:20.080 this\
+00:32:23.360 and we'll call this both\
+00:32:26.559 that's both\
+00:32:28.399 results let's also go and rename this\
+00:32:31.200 from negative neutral and positive to be\
+00:32:34.159 explicitly named that they're vader\
+00:32:36.320 vader results and i'm just going to copy\
+00:32:38.480 this code which will basically\
+00:32:41.679 rename these\
+00:32:44.320 to vader and then the key name instead\
+00:32:47.200 of\
+00:32:48.480 right now it's just negative positive\
+00:32:51.440 and then we will\
+00:32:54.640 combine these two okay so running that\
+00:32:58.159 for one\
+00:32:59.200 iteration it looks like our results look\
+00:33:02.240 good and we want to now just run it\
+00:33:04.399 through all 500 examples so i'm going to\
+00:33:06.880 take out this break\
+00:33:09.039 and it's gonna run through oh we also\
+00:33:11.760 need to\
+00:33:14.480 um\
+00:33:16.480 actually store this into the dictionary\
+00:33:18.720 that we're gonna store with the id and\
+00:33:20.960 we're gonna store both\
+00:33:22.559 now here's i know this is gonna break\
+00:33:26.559 uh because i ran this before but i want\
+00:33:28.640 to just show as an example when it does\
+00:33:30.480 break\
+00:33:33.120 all right it did break\
+00:33:35.200 on one of these examples\
+00:33:37.279 because the text had some issues with it\
+00:33:40.159 and it wasn't able to run through\
+00:33:42.720 the roberta model so instead of\
+00:33:45.440 debugging this all right now and it has\
+00:33:47.600 to do with the size of the text itself\
+00:33:49.519 there's certain size of text that's just\
+00:33:51.360 too big for the model to handle\
+00:33:53.519 we will skip those and we will skip\
+00:33:55.600 those by adding a try accept clause here\
+00:34:01.440 so it'll run through except for when\
+00:34:04.240 this runtime error occurs\
+00:34:09.199 in that case we'll just print out a\
+00:34:11.599 message so we we know\
+00:34:13.918 that it broke\
+00:34:15.520 for id\
+00:34:18.079 this\
+00:34:18.839 id now we're going to rerun and let it\
+00:34:21.119 go through all 500.\
+00:34:24.239 okay so that's done running and you can\
+00:34:26.079 see that did break for two examples um\
+00:34:29.040 we could we could have\
+00:34:31.280 lowered the amount of size of those and\
+00:34:34.639 and it would have worked but this gets\
+00:34:36.560 us a good result for now\
+00:34:38.719 now it was pretty slow running keep in\
+00:34:41.199 mind that's because i was running it\
+00:34:43.760 only on a cpu these roberta models and\
+00:34:46.639 transformer models are\
+00:34:48.480 optimized to be run on a gpu and if i\
+00:34:51.119 was to go here and turn on the gpu and\
+00:34:53.679 the preferences\
+00:34:55.199 i could have run a lot faster\
+00:34:57.520 but it works for this case just to run\
+00:34:59.520 it on a cpu\
+00:35:01.359 and now let's actually take the results\
+00:35:03.200 of this\
+00:35:04.079 and make the results dictionary similar\
+00:35:06.400 to what we did before so\
+00:35:10.000 this\
+00:35:11.040 line of code which takes these results\
+00:35:12.960 runs of transforms on\
+00:35:14.839 it let's call this\
+00:35:17.200 results data frame\
+00:35:22.240 and it will merge back on the main data\
+00:35:24.079 set\
+00:35:25.760 now if i do a head command on this\
+00:35:28.320 we can see now we have our vader\
+00:35:31.040 scores\
+00:35:32.240 all four of them and our roberta scores\
+00:35:35.520 for each row in the data set\
+00:35:39.839 uh really quickly let's\
+00:35:42.880 come\
+00:35:43.760 compare\
+00:35:45.520 scores\
+00:35:48.000 across\
+00:35:49.839 or\
+00:35:50.640 between models\
+00:35:52.560 and we can do this using seaborne's pair\
+00:35:55.760 plot i think this would be a nice way to\
+00:35:57.359 look at it so\
+00:35:58.720 uh pair plot lets us see\
+00:36:01.680 comparison between each observation and\
+00:36:04.800 what each feature looks like so i'll\
+00:36:07.359 show you here by\
+00:36:08.960 running it on this results data frame\
+00:36:11.440 and then we're just going to provide it\
+00:36:12.800 the variables we want it to\
+00:36:16.320 look at\
+00:36:18.400 and those will be this vader negative\
+00:36:21.520 neutral positive and\
+00:36:25.359 the\
+00:36:26.640 let's remove the vader compound because\
+00:36:28.800 i don't think that's really needed to\
+00:36:30.160 compare\
+00:36:31.119 and we're also provided the roberta\
+00:36:33.359 columns and we're saying these are the\
+00:36:35.040 ones variables we want to compare\
+00:36:37.839 uh let's also color it so the hue\
+00:36:42.000 color of each dot is going to be by the\
+00:36:44.720 score which is that one to five star\
+00:36:47.680 scores and let's also give it a\
+00:36:52.839 palette something where we can\
+00:36:55.839 easily see the difference between each\
+00:36:58.160 values\
+00:36:59.520 um okay so this is vares i think\
+00:37:05.200 and actually this combine and compare\
+00:37:08.560 is what we're doing now\
+00:37:13.040 okay so a lot going on here but one\
+00:37:15.359 thing that we notice here is the five\
+00:37:18.160 star reviews are this purplish color\
+00:37:20.800 and if we look at\
+00:37:23.040 vader the positive reviews are more so\
+00:37:26.800 to the right on for these five star\
+00:37:29.359 reviews\
+00:37:30.880 for the\
+00:37:33.119 roberta model you can see it's way over\
+00:37:35.440 to the right\
+00:37:37.040 and then we can see that there are some\
+00:37:38.960 correlations between the roberta model\
+00:37:43.119 and the vader model it's a little hard\
+00:37:45.359 to see exactly if there are correlations\
+00:37:48.000 but one thing that becomes very clear is\
+00:37:50.240 that the vader model is a little bit\
+00:37:52.960 less confident\
+00:37:54.640 in all of its predictions compared to\
+00:37:57.040 the roberta model which really separates\
+00:37:59.359 the positivity\
+00:38:00.880 and neutral and negative scores for each\
+00:38:04.320 of these predicted values but if you\
+00:38:06.880 look here this um positive and neutral\
+00:38:10.000 like the\
+00:38:11.680 roberta model has very high scores for\
+00:38:14.800 the five stars and most of these one\
+00:38:17.040 stars are very low in positivity um\
+00:38:21.839 sentiment scoring\
+00:38:23.760 so that's pretty cool\
+00:38:26.960 let's also\
+00:38:28.480 review some examples this is going gonna\
+00:38:31.040 be pretty cool because now that we have\
+00:38:34.400 uh sentiment score and uh\
+00:38:37.760 we know the five-star ranking of the\
+00:38:40.000 review we can look and see where the\
+00:38:42.400 model maybe does the opposite of what we\
+00:38:45.280 think it should so\
+00:38:47.200 one way we can do that is we just take\
+00:38:49.119 this results data frame\
+00:38:52.800 and we query where there's a one star\
+00:38:55.440 review\
+00:38:56.960 so score equals one these are all our\
+00:38:59.440 one star\
+00:39:00.480 reviews and then we'll sort the values\
+00:39:02.800 by this roberta\
+00:39:05.040 positivity score and for ascending\
+00:39:08.880 let's make this false so the highest\
+00:39:11.280 positive\
+00:39:12.800 score positivity score with\
+00:39:15.680 the\
+00:39:16.800 rank rating of the value being 1\
+00:39:20.160 will appear at the top\
+00:39:22.240 and then we'll take the text of that and\
+00:39:24.960 just do a values\
+00:39:27.119 and print out the top value so what\
+00:39:29.520 we're looking at here is\
+00:39:32.400 a text that is said to be positive by\
+00:39:35.040 the model but is one score by what the\
+00:39:37.839 actual reviewer gave it\
+00:39:40.240 it says i felt energized within five\
+00:39:42.000 minutes but it lasts about 45 minutes i\
+00:39:44.079 paid 3.99 for this drink i should have\
+00:39:46.320 just drunk a cup of coffee and save my\
+00:39:48.560 money so this is very nuanced sentence\
+00:39:51.440 and you can see that\
+00:39:53.040 it starts off being sort of positive i\
+00:39:55.359 felt energized\
+00:39:57.040 it lasted 45 minutes\
+00:39:58.960 the model is getting confused and\
+00:40:00.720 thinking this is more of a positive\
+00:40:03.520 statement than\
+00:40:05.760 we can tell that this is saying negative\
+00:40:08.640 by the end of the statement so that's\
+00:40:10.400 interesting and it makes sense let's do\
+00:40:12.480 the same thing with the\
+00:40:15.440 with the vader score so look at the most\
+00:40:18.240 positive\
+00:40:21.280 score\
+00:40:22.240 for a once\
+00:40:24.560 rating\
+00:40:25.760 it says so we canceled the order it was\
+00:40:27.920 cancelled without any problem\
+00:40:30.000 that is a positive note\
+00:40:32.319 so they actually were used the word\
+00:40:34.560 positive\
+00:40:35.839 and\
+00:40:36.800 without any problem\
+00:40:38.560 seems positive\
+00:40:40.640 but it is a negative review\
+00:40:42.800 and it's being a little sarcastic i\
+00:40:44.720 guess a little tongue-in-cheek and the\
+00:40:46.319 model does not pick on up on that\
+00:40:48.319 especially the vader type of model which\
+00:40:50.960 is only looking at a bag of words\
+00:40:54.079 um for all of this sentence and and the\
+00:40:56.319 score of each word individually\
+00:40:58.800 let's also look at\
+00:41:00.720 uh\
+00:41:03.359 negative\
+00:41:05.040 sentiment\
+00:41:07.520 five star review\
+00:41:10.400 and let's do this with the roberta model\
+00:41:12.480 first\
+00:41:15.760 so we'll switch to a five-star review\
+00:41:18.720 and we'll look at the top negative\
+00:41:20.640 sentence\
+00:41:21.760 it says this was so delicious but too\
+00:41:24.400 bad i ate them too fast and gained two\
+00:41:26.560 pounds my fault okay so it is sort of a\
+00:41:29.280 negative sentiment but a positive review\
+00:41:33.440 that's kind of funny that that one came\
+00:41:35.760 up and then we'll do the exact same\
+00:41:37.119 thing for the\
+00:41:40.720 vader\
+00:41:43.040 and it happens to be the exact same one\
+00:41:44.880 so the both models got\
+00:41:47.040 i guess you could say confused but maybe\
+00:41:49.040 this actually is a negative sentiment\
+00:41:51.680 for a positive review so maybe it did a\
+00:41:53.599 better job than what we would expect to\
+00:41:55.520 see\
+00:41:57.359 all right so we've explored a lot of\
+00:41:59.200 things with sentiment analysis so far\
+00:42:01.920 the one extra bonus piece that i want to\
+00:42:04.960 show you is just using the hugging face\
+00:42:08.400 transformers pipelines and this just\
+00:42:11.119 makes everything really\
+00:42:12.960 simple and i want to make sure i noted\
+00:42:15.040 this you can read about it on their\
+00:42:16.560 website\
+00:42:17.920 but you basically can just\
+00:42:20.880 import from transformers library\
+00:42:23.839 a pipeline\
+00:42:27.440 um and you need a spell pipeline\
+00:42:29.599 correctly\
+00:42:32.000 there we go and then we can make a\
+00:42:34.560 pipeline\
+00:42:35.839 with\
+00:42:36.640 called sentiment pipeline\
+00:42:40.079 with this pipeline\
+00:42:42.319 and there are a handful of things that\
+00:42:44.240 we could feed it\
+00:42:46.000 um\
+00:42:46.960 that it it will automatically be set up\
+00:42:49.839 tasks that it's automatically set up\
+00:42:52.640 for and we want to do\
+00:42:55.359 sentiment analysis this will\
+00:42:57.520 automatically\
+00:42:58.400 download their default model\
+00:43:01.440 and embeddings\
+00:43:03.040 for\
+00:43:04.000 uh this pipeline and you can just run\
+00:43:06.319 sentiment analysis with two lines of\
+00:43:08.480 code super quick\
+00:43:10.240 and easy uh you can also go in here and\
+00:43:13.920 change the model that it uses in the\
+00:43:16.160 different tokenizer but the nice part\
+00:43:18.960 about this is you don't have to set\
+00:43:20.240 anything up you just do this it'll\
+00:43:22.319 download the model\
+00:43:24.079 it'll give us our default sentiment\
+00:43:26.800 pipeline and then we can just run text\
+00:43:28.880 on it\
+00:43:31.839 okay so that's done running so i could\
+00:43:34.160 say i love sentiment analysis\
+00:43:40.240 you can see it's a different format and\
+00:43:42.079 the output it gives by default but it's\
+00:43:43.760 saying this is positive with a very high\
+00:43:46.000 confidence\
+00:43:47.359 um\
+00:43:48.319 i'm going to type in make sure\
+00:43:50.560 to like and subscribe\
+00:43:55.040 here\
+00:43:56.240 and that also is positive\
+00:43:59.280 just to do a bad example we'll say boo\
+00:44:04.160 and that does show as negative so it's\
+00:44:06.160 working\
+00:44:07.760 all right so\
+00:44:09.839 that's it\
+00:44:12.640 for our sentiment\
+00:44:14.640 analysis project tutorial\
+00:44:18.480 so there we have it we walked through\
+00:44:20.800 two different types of models that you\
+00:44:22.400 can use for sentiment analysis explored\
+00:44:24.880 some of the differences between them we\
+00:44:27.359 actually ran it on a whole corpus of\
+00:44:30.079 data 500 different reviews from amazon\
+00:44:33.599 you could scale this up and run it on\
+00:44:36.079 all half a million\
+00:44:38.079 examples and see what insights you can\
+00:44:40.319 find\
+00:44:41.280 so thanks again for watching my videos\
+00:44:43.040 make sure you subscribe so that next\
+00:44:44.880 time i release a video you'll be\
+00:44:46.560 notified and i'll see you in the next\
+00:44:48.480 one bye\
+}
